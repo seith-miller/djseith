@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Your Music Page</title>
+    <style>
+        body {
+            background: #000000;
+            color: #33FF33;
+            font-family: "Courier New", monospace;
+            margin: 40px;
+            line-height: 1.5;
+        }
+        
+        table {
+            border: 2px solid #33FF33;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px solid #33FF33;
+        }
+        
+        a {
+            color: #FF00FF;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #FFFF00;
+            text-decoration: underline;
+        }
+        
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+        
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        
+        hr {
+            border: 1px solid #33FF33;
+            margin: 20px 0;
+        }
+        
+        img {
+            border: 2px solid #33FF33;
+            margin: 10px;
+        }
+        
+        marquee {
+            color: #FF00FF;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 class="blink">Welcome to My Music Page</h1>
+        <img src="/api/placeholder/200/200" alt="Your Photo" />
+        <marquee>🎵 New tracks coming soon! 🎵</marquee>
+    </center>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td width="20%" valign="top">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shows">Shows</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </td>
+            <td>
+                <h2 id="music">My Music</h2>
+                <p>Check out my latest tracks:</p>
+                <ul>
+                    <li>Track 1</li>
+                    <li>Track 2</li>
+                    <li>Track 3</li>
+                </ul>
+
+                <h2 id="about">About Me</h2>
+                <p>Your bio here...</p>
+
+                <h2 id="shows">Upcoming Shows</h2>
+                <ul>
+                    <li>Date - Venue</li>
+                    <li>Date - Venue</li>
+                </ul>
+
+                <h2 id="contact">Contact</h2>
+                <p>Email: your@email.com</p>
+            </td>
+        </tr>
+    </table>
+
+    <center>
+        <p><small>© 2024 | Best viewed in Netscape Navigator</small></p>
+        <img src="/api/placeholder/88/31" alt="Best viewed in Netscape" />
+    </center>
+</body>
+</html>
