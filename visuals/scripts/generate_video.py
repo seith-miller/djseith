@@ -365,6 +365,22 @@ def compute_brightness_envelope(audio_path: str, n_frames: int, fps: int,
     return env
 
 
+def smooth_envelope(env: np.ndarray, fps: int, window_s: float) -> np.ndarray:
+    """Low-pass filter via centered moving average.
+
+    Removes rapid luminance swings that cause PSE flash triggers.
+    window_s is the smoothing window in seconds (e.g. 0.5 = half-second average).
+    """
+    if window_s <= 0:
+        return env
+    win = max(3, int(window_s * fps) | 1)  # odd window size
+    kernel = np.ones(win) / win
+    # Pad edges to avoid boundary artifacts
+    padded = np.pad(env, win // 2, mode='edge')
+    smoothed = np.convolve(padded, kernel, mode='valid')[:len(env)]
+    return np.clip(smoothed, 0.0, 1.0)
+
+
 def apply_strobe(envelope: np.ndarray, fps: int, strobe_hz: float,
                  strobe_depth: float, strobe_limit: float,
                  sections: list, strobe_mode: str,
@@ -750,6 +766,8 @@ def main():
                     help="Min seconds between stills (default 20)")
     ap.add_argument("--brightness-release", type=float, default=1.0,
                     help="Audio brightness release time in seconds (default 1.0)")
+    ap.add_argument("--brightness-smooth", type=float, default=0.0,
+                    help="Low-pass smoothing window in seconds (reduces strobing, e.g. 0.5)")
     ap.add_argument("--no-brightness",   action="store_true",
                     help="Disable audio-reactive brightness modulation")
     ap.add_argument("--white-mode",      action="store_true",
@@ -836,6 +854,12 @@ def main():
             envelope = compute_brightness_envelope(
                 args.audio, n_frames, FPS, args.brightness_release,
             )
+            # Low-pass smooth to reduce unintentional flash transitions
+            if args.brightness_smooth > 0:
+                envelope = smooth_envelope(envelope, FPS, args.brightness_smooth)
+                print(f"    Smoothed envelope (window={args.brightness_smooth}s): "
+                      f"mean={envelope.mean():.2f}  min={envelope.min():.2f}  "
+                      f"max={envelope.max():.2f}")
             # Apply strobe modulation if requested
             if args.strobe_hz > 0:
                 envelope = apply_strobe(
