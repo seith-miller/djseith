@@ -1,0 +1,964 @@
+{
+  "reviewed": {
+    "dtr_shot_001.mp4": "ok",
+    "dancing_to_rock_n_roll_funeral_parade_of_roses_1969/shot_002.mp4": "resplit",
+    "dtr_shot_003.mp4": "resplit",
+    "fpr_shot_001.mp4": "ok",
+    "fpr_shot_002.mp4": "favorite",
+    "fpr_shot_003.mp4": "ok",
+    "fpr_shot_004.mp4": "favorite",
+    "funeral_parade_of_roses/shot_005.mp4": "resplit",
+    "fpr_shot_006.mp4": "ok",
+    "bfi_shot_001.mp4": "favorite",
+    "edd_shot_001.mp4": "favorite",
+    "edd_shot_002.mp4": "favorite",
+    "edd_shot_004.mp4": "favorite",
+    "edd_shot_006.mp4": "favorite",
+    "edd_shot_007.mp4": "favorite",
+    "edd_shot_008.mp4": "favorite",
+    "edd_shot_009.mp4": "favorite",
+    "edd_shot_011.mp4": "favorite",
+    "edd_shot_012.mp4": "ok",
+    "edd_shot_014.mp4": "ok",
+    "edd_shot_015.mp4": "ok",
+    "edd_shot_017.mp4": "favorite",
+    "edd_shot_019.mp4": "ok",
+    "edd_shot_021.mp4": "ok",
+    "edd_shot_023.mp4": "favorite",
+    "edd_shot_024.mp4": "ok",
+    "edd_shot_025.mp4": "favorite",
+    "funeral_parade_of_roses_guevaras_delirium/shot_001.mp4": "resplit",
+    "funeral_parade_of_roses_guevaras_delirium/shot_004.mp4": "resplit",
+    "lf_shot_001.mp4": "ok",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_002.mp4": "resplit",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_003.mp4": "resplit",
+    "lf_shot_004.mp4": "favorite",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_006.mp4": "resplit",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_007.mp4": "resplit",
+    "mon_shot_001.mp4": "favorite",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_002.mp4": "resplit",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_003.mp4": "resplit",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_004.mp4": "resplit",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_005.mp4": "resplit",
+    "mon_shot_006.mp4": "favorite",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_007.mp4": "resplit",
+    "mon_shot_008.mp4": "favorite",
+    "mon_shot_010.mp4": "favorite",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_011.mp4": "resplit",
+    "mon_shot_012.mp4": "favorite",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_013.mp4": "resplit",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_014.mp4": "resplit",
+    "mon_shot_015.mp4": "favorite",
+    "mon_shot_016.mp4": "favorite",
+    "why_shot_002.mp4": "favorite",
+    "why_shot_003.mp4": "favorite",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_009.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_011.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_018.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_019.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_020.mp4": "resplit",
+    "why_shot_021.mp4": "favorite",
+    "why_shot_022.mp4": "ok",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_029.mp4": "resplit",
+    "why_shot_040.mp4": "favorite",
+    "why_shot_041.mp4": "favorite",
+    "why_shot_043.mp4": "favorite",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_053.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_059.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_060.mp4": "resplit",
+    "why_shot_062.mp4": "favorite",
+    "why_shot_064.mp4": "favorite",
+    "why_shot_066.mp4": "favorite",
+    "why_shot_070.mp4": "favorite",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_073.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_080.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_081.mp4": "resplit",
+    "why_shot_084.mp4": "favorite",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_085.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_087.mp4": "resplit",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_090.mp4": "resplit",
+    "why_shot_097.mp4": "ok",
+    "why_shot_099.mp4": "ok",
+    "why_shot_107.mp4": "favorite",
+    "dtr_shot_002a.mp4": "resplit",
+    "dtr_shot_002b.mp4": "favorite",
+    "fpr_shot_005c.mp4": "ok",
+    "fpr_shot_005d.mp4": "favorite",
+    "lf_shot_002a.mp4": "favorite",
+    "lf_shot_002b.mp4": "resplit",
+    "lf_shot_002c.mp4": "favorite",
+    "lf_shot_003a.mp4": "resplit",
+    "lf_shot_003b.mp4": "ok",
+    "lf_shot_003c.mp4": "ok",
+    "lf_shot_003d.mp4": "favorite",
+    "lf_shot_003e.mp4": "resplit",
+    "lf_shot_003f.mp4": "ok",
+    "lf_shot_003g.mp4": "favorite",
+    "lf_shot_006a.mp4": "favorite",
+    "lf_shot_006b.mp4": "ok",
+    "lf_shot_006c.mp4": "ok",
+    "lf_shot_006d.mp4": "resplit",
+    "lf_shot_006e.mp4": "ok",
+    "lf_shot_006f.mp4": "favorite",
+    "lf_shot_006g.mp4": "favorite",
+    "lf_shot_007a.mp4": "favorite",
+    "lf_shot_007b.mp4": "favorite",
+    "lf_shot_007c.mp4": "ok",
+    "lf_shot_007d.mp4": "favorite",
+    "mon_shot_002a.mp4": "favorite",
+    "mon_shot_002b.mp4": "favorite",
+    "mon_shot_002c.mp4": "favorite",
+    "mon_shot_002d.mp4": "favorite",
+    "mon_shot_002e.mp4": "favorite",
+    "mon_shot_002f.mp4": "favorite",
+    "mon_shot_003a.mp4": "favorite",
+    "mon_shot_003b.mp4": "ok",
+    "mon_shot_003c.mp4": "favorite",
+    "mon_shot_004b.mp4": "ok",
+    "mon_shot_005a.mp4": "favorite",
+    "mon_shot_005b.mp4": "favorite",
+    "mon_shot_005c.mp4": "favorite",
+    "mon_shot_005d.mp4": "favorite",
+    "mon_shot_005e.mp4": "favorite",
+    "mon_shot_005f.mp4": "favorite",
+    "mon_shot_005g.mp4": "favorite",
+    "mon_shot_005h.mp4": "ok",
+    "mon_shot_007a.mp4": "ok",
+    "mon_shot_007b.mp4": "favorite",
+    "mon_shot_011a.mp4": "resplit",
+    "mon_shot_011b.mp4": "ok",
+    "mon_shot_011c.mp4": "ok",
+    "mon_shot_011d.mp4": "favorite",
+    "mon_shot_011e.mp4": "resplit",
+    "mon_shot_013a.mp4": "favorite",
+    "mon_shot_013b.mp4": "favorite",
+    "mon_shot_014a.mp4": "ok",
+    "mon_shot_014b.mp4": "favorite",
+    "mon_shot_014c.mp4": "ok",
+    "mon_shot_014d.mp4": "favorite",
+    "why_shot_009a.mp4": "favorite",
+    "why_shot_009b.mp4": "ok",
+    "why_shot_009c.mp4": "resplit",
+    "why_shot_009d.mp4": "favorite",
+    "why_shot_009e.mp4": "favorite",
+    "why_shot_009f.mp4": "favorite",
+    "why_shot_009g.mp4": "favorite",
+    "why_shot_009h.mp4": "favorite",
+    "why_shot_011a.mp4": "favorite",
+    "why_shot_011b.mp4": "favorite",
+    "why_shot_011c.mp4": "ok",
+    "why_shot_011d.mp4": "ok",
+    "why_shot_011e.mp4": "ok",
+    "why_shot_011f.mp4": "favorite",
+    "why_shot_011i.mp4": "ok",
+    "why_shot_018a.mp4": "favorite",
+    "why_shot_018b.mp4": "favorite",
+    "why_shot_018c.mp4": "favorite",
+    "why_shot_018d.mp4": "favorite",
+    "why_shot_018e.mp4": "favorite",
+    "why_shot_018f.mp4": "favorite",
+    "why_shot_018h.mp4": "ok",
+    "why_shot_018j.mp4": "favorite",
+    "why_shot_019a.mp4": "ok",
+    "why_shot_019b.mp4": "favorite",
+    "why_shot_019c.mp4": "ok",
+    "why_shot_020a.mp4": "ok",
+    "why_shot_020b.mp4": "favorite",
+    "why_shot_029a.mp4": "ok",
+    "why_shot_053c.mp4": "favorite",
+    "why_shot_053d.mp4": "favorite",
+    "why_shot_053e.mp4": "ok",
+    "why_shot_059a.mp4": "resplit",
+    "why_shot_059c.mp4": "favorite",
+    "why_shot_059d.mp4": "favorite",
+    "why_shot_060a.mp4": "ok",
+    "why_shot_060b.mp4": "favorite",
+    "why_shot_073b.mp4": "ok",
+    "why_shot_073c.mp4": "ok",
+    "why_shot_073f.mp4": "ok",
+    "why_shot_073g.mp4": "ok",
+    "why_shot_073h.mp4": "favorite",
+    "why_shot_080a.mp4": "favorite",
+    "why_shot_080b.mp4": "ok",
+    "why_shot_080c.mp4": "favorite",
+    "why_shot_081a.mp4": "favorite",
+    "why_shot_081b.mp4": "ok",
+    "why_shot_081c.mp4": "resplit",
+    "why_shot_081d.mp4": "ok",
+    "why_shot_085a.mp4": "favorite",
+    "why_shot_085b.mp4": "ok",
+    "why_shot_085c.mp4": "ok",
+    "why_shot_085d.mp4": "ok",
+    "why_shot_085e.mp4": "ok",
+    "why_shot_085f.mp4": "ok",
+    "why_shot_085g.mp4": "favorite",
+    "why_shot_085h.mp4": "favorite",
+    "why_shot_085i.mp4": "ok",
+    "why_shot_085j.mp4": "favorite",
+    "why_shot_085k.mp4": "favorite",
+    "why_shot_085l.mp4": "favorite",
+    "why_shot_087a.mp4": "favorite",
+    "why_shot_087b.mp4": "ok",
+    "why_shot_087c.mp4": "favorite",
+    "why_shot_087d.mp4": "ok",
+    "why_shot_087e.mp4": "ok",
+    "why_shot_090c.mp4": "favorite",
+    "why_shot_090d.mp4": "ok",
+    "why_shot_090f.mp4": "favorite",
+    "why_shot_090g.mp4": "ok",
+    "why_shot_090j.mp4": "favorite",
+    "why_shot_090n.mp4": "favorite"
+  },
+  "to_resplit": [
+    "dancing_to_rock_n_roll_funeral_parade_of_roses_1969/shot_002.mp4",
+    "dtr_shot_003.mp4",
+    "funeral_parade_of_roses/shot_005.mp4",
+    "funeral_parade_of_roses_guevaras_delirium/shot_001.mp4",
+    "funeral_parade_of_roses_guevaras_delirium/shot_004.mp4",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_002.mp4",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_003.mp4",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_006.mp4",
+    "la_femme_si_un_jour_lyrics_english_fran\u00e7ais_music_video_fune/shot_007.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_002.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_003.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_004.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_005.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_007.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_011.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_013.mp4",
+    "montage_of_funeral_parade_of_roses_beauty_in_rebellion_\u8594\u8587\u306e\u846c\u5217/shot_014.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_009.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_011.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_018.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_019.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_020.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_029.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_053.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_059.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_060.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_073.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_080.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_081.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_085.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_087.mp4",
+    "why_you_should_watch_funeral_parade_of_roses_1969_late_pride/shot_090.mp4",
+    "dtr_shot_002a.mp4",
+    "lf_shot_002b.mp4",
+    "lf_shot_003a.mp4",
+    "lf_shot_003e.mp4",
+    "lf_shot_006d.mp4",
+    "mon_shot_011a.mp4",
+    "mon_shot_011e.mp4",
+    "why_shot_009c.mp4",
+    "why_shot_059a.mp4",
+    "why_shot_081c.mp4"
+  ],
+  "trashed": [],
+  "favorites": [
+    "fpr_shot_002.mp4",
+    "fpr_shot_004.mp4",
+    "bfi_shot_001.mp4",
+    "edd_shot_001.mp4",
+    "edd_shot_002.mp4",
+    "edd_shot_004.mp4",
+    "edd_shot_006.mp4",
+    "edd_shot_007.mp4",
+    "edd_shot_008.mp4",
+    "edd_shot_009.mp4",
+    "edd_shot_011.mp4",
+    "edd_shot_017.mp4",
+    "edd_shot_023.mp4",
+    "edd_shot_025.mp4",
+    "lf_shot_004.mp4",
+    "mon_shot_001.mp4",
+    "mon_shot_006.mp4",
+    "mon_shot_008.mp4",
+    "mon_shot_010.mp4",
+    "mon_shot_012.mp4",
+    "mon_shot_015.mp4",
+    "mon_shot_016.mp4",
+    "why_shot_002.mp4",
+    "why_shot_003.mp4",
+    "why_shot_021.mp4",
+    "why_shot_040.mp4",
+    "why_shot_041.mp4",
+    "why_shot_043.mp4",
+    "why_shot_062.mp4",
+    "why_shot_064.mp4",
+    "why_shot_066.mp4",
+    "why_shot_070.mp4",
+    "why_shot_084.mp4",
+    "why_shot_107.mp4",
+    "dtr_shot_002b.mp4",
+    "fpr_shot_005d.mp4",
+    "lf_shot_002a.mp4",
+    "lf_shot_002c.mp4",
+    "lf_shot_003d.mp4",
+    "lf_shot_003g.mp4",
+    "lf_shot_006a.mp4",
+    "lf_shot_006f.mp4",
+    "lf_shot_006g.mp4",
+    "lf_shot_007a.mp4",
+    "lf_shot_007b.mp4",
+    "lf_shot_007d.mp4",
+    "mon_shot_002a.mp4",
+    "mon_shot_002b.mp4",
+    "mon_shot_002c.mp4",
+    "mon_shot_002d.mp4",
+    "mon_shot_002e.mp4",
+    "mon_shot_002f.mp4",
+    "mon_shot_003a.mp4",
+    "mon_shot_003c.mp4",
+    "mon_shot_005a.mp4",
+    "mon_shot_005b.mp4",
+    "mon_shot_005c.mp4",
+    "mon_shot_005d.mp4",
+    "mon_shot_005e.mp4",
+    "mon_shot_005f.mp4",
+    "mon_shot_005g.mp4",
+    "mon_shot_007b.mp4",
+    "mon_shot_011d.mp4",
+    "mon_shot_013a.mp4",
+    "mon_shot_013b.mp4",
+    "mon_shot_014b.mp4",
+    "mon_shot_014d.mp4",
+    "why_shot_009a.mp4",
+    "why_shot_009d.mp4",
+    "why_shot_009e.mp4",
+    "why_shot_009f.mp4",
+    "why_shot_009g.mp4",
+    "why_shot_009h.mp4",
+    "why_shot_011a.mp4",
+    "why_shot_011b.mp4",
+    "why_shot_011f.mp4",
+    "why_shot_018a.mp4",
+    "why_shot_018b.mp4",
+    "why_shot_018c.mp4",
+    "why_shot_018d.mp4",
+    "why_shot_018e.mp4",
+    "why_shot_018f.mp4",
+    "why_shot_018j.mp4",
+    "why_shot_019b.mp4",
+    "why_shot_020b.mp4",
+    "why_shot_053c.mp4",
+    "why_shot_053d.mp4",
+    "why_shot_059c.mp4",
+    "why_shot_059d.mp4",
+    "why_shot_060b.mp4",
+    "why_shot_073h.mp4",
+    "why_shot_080a.mp4",
+    "why_shot_080c.mp4",
+    "why_shot_081a.mp4",
+    "why_shot_085a.mp4",
+    "why_shot_085g.mp4",
+    "why_shot_085h.mp4",
+    "why_shot_085j.mp4",
+    "why_shot_085k.mp4",
+    "why_shot_085l.mp4",
+    "why_shot_087a.mp4",
+    "why_shot_087c.mp4",
+    "why_shot_090c.mp4",
+    "why_shot_090f.mp4",
+    "why_shot_090j.mp4",
+    "why_shot_090n.mp4"
+  ],
+  "tags": {
+    "bfi_shot_001.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "dtr_shot_001.mp4": [
+      "white",
+      "dancing"
+    ],
+    "dtr_shot_002b.mp4": [
+      "dancing",
+      "black",
+      "night"
+    ],
+    "edd_shot_001.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_002.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_004.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_006.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_007.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_008.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_009.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_011.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "edd_shot_012.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_014.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_015.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_017.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_019.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_021.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_023.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_024.mp4": [
+      "eddie",
+      "black"
+    ],
+    "edd_shot_025.mp4": [
+      "eddie",
+      "black"
+    ],
+    "fpr_shot_001.mp4": [
+      "black",
+      "night"
+    ],
+    "fpr_shot_002.mp4": [
+      "white"
+    ],
+    "fpr_shot_003.mp4": [
+      "black"
+    ],
+    "fpr_shot_005c.mp4": [
+      "black"
+    ],
+    "fpr_shot_005d.mp4": [
+      "white"
+    ],
+    "fpr_shot_006.mp4": [
+      "black"
+    ],
+    "lf_shot_001.mp4": [
+      "black",
+      "dancing"
+    ],
+    "lf_shot_002a.mp4": [
+      "white"
+    ],
+    "lf_shot_002c.mp4": [
+      "day",
+      "street"
+    ],
+    "lf_shot_003b.mp4": [
+      "black"
+    ],
+    "lf_shot_003c.mp4": [
+      "black"
+    ],
+    "lf_shot_003d.mp4": [
+      "eddie",
+      "white"
+    ],
+    "lf_shot_003f.mp4": [
+      "black"
+    ],
+    "lf_shot_003g.mp4": [
+      "eddie",
+      "black"
+    ],
+    "lf_shot_004.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "lf_shot_006a.mp4": [
+      "black",
+      "night"
+    ],
+    "lf_shot_006b.mp4": [
+      "black"
+    ],
+    "lf_shot_006c.mp4": [
+      "black",
+      "night",
+      "street"
+    ],
+    "lf_shot_006e.mp4": [
+      "black"
+    ],
+    "lf_shot_006f.mp4": [
+      "black",
+      "night"
+    ],
+    "lf_shot_006g.mp4": [
+      "black",
+      "night"
+    ],
+    "lf_shot_007a.mp4": [
+      "white"
+    ],
+    "lf_shot_007b.mp4": [
+      "eddie",
+      "white"
+    ],
+    "lf_shot_007c.mp4": [
+      "black"
+    ],
+    "lf_shot_007d.mp4": [
+      "eddie",
+      "black"
+    ],
+    "mon_shot_001.mp4": [
+      "eddie",
+      "white"
+    ],
+    "mon_shot_002a.mp4": [
+      "eddie",
+      "black"
+    ],
+    "mon_shot_002b.mp4": [
+      "black"
+    ],
+    "mon_shot_002c.mp4": [
+      "eddie",
+      "black"
+    ],
+    "mon_shot_002d.mp4": [
+      "black",
+      "night"
+    ],
+    "mon_shot_002e.mp4": [
+      "black"
+    ],
+    "mon_shot_002f.mp4": [
+      "black",
+      "night"
+    ],
+    "mon_shot_003a.mp4": [
+      "black"
+    ],
+    "mon_shot_003b.mp4": [
+      "white"
+    ],
+    "mon_shot_003c.mp4": [
+      "eddie",
+      "black"
+    ],
+    "mon_shot_004b.mp4": [
+      "day",
+      "street"
+    ],
+    "mon_shot_005a.mp4": [
+      "black",
+      "night",
+      "dancing"
+    ],
+    "mon_shot_005b.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "mon_shot_005c.mp4": [
+      "eddie",
+      "black",
+      "night"
+    ],
+    "mon_shot_005d.mp4": [
+      "black",
+      "night"
+    ],
+    "mon_shot_005e.mp4": [
+      "black"
+    ],
+    "mon_shot_005f.mp4": [
+      "black",
+      "night"
+    ],
+    "mon_shot_005g.mp4": [
+      "black",
+      "night"
+    ],
+    "mon_shot_005h.mp4": [
+      "black"
+    ],
+    "mon_shot_006.mp4": [
+      "eddie",
+      "white"
+    ],
+    "mon_shot_007a.mp4": [
+      "black",
+      "night"
+    ],
+    "mon_shot_007b.mp4": [
+      "black",
+      "night"
+    ],
+    "mon_shot_008.mp4": [
+      "black"
+    ],
+    "mon_shot_010.mp4": [
+      "sex",
+      "black"
+    ],
+    "mon_shot_011b.mp4": [
+      "black"
+    ],
+    "mon_shot_011c.mp4": [
+      "black"
+    ],
+    "mon_shot_011d.mp4": [
+      "black",
+      "night",
+      "dancing"
+    ],
+    "mon_shot_012.mp4": [
+      "day",
+      "street"
+    ],
+    "mon_shot_013a.mp4": [
+      "black"
+    ],
+    "mon_shot_013b.mp4": [
+      "black",
+      "dancing"
+    ],
+    "mon_shot_014a.mp4": [
+      "black"
+    ],
+    "mon_shot_014b.mp4": [
+      "eddie",
+      "white"
+    ],
+    "mon_shot_014c.mp4": [
+      "black"
+    ],
+    "mon_shot_014d.mp4": [
+      "eddie",
+      "black",
+      "horror"
+    ],
+    "mon_shot_015.mp4": [
+      "eddie",
+      "black"
+    ],
+    "mon_shot_016.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_002.mp4": [
+      "black"
+    ],
+    "why_shot_003.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_009a.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_009b.mp4": [
+      "black"
+    ],
+    "why_shot_009d.mp4": [
+      "black"
+    ],
+    "why_shot_009e.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_009f.mp4": [
+      "white"
+    ],
+    "why_shot_009g.mp4": [
+      "black"
+    ],
+    "why_shot_009h.mp4": [
+      "black"
+    ],
+    "why_shot_011a.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_011b.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_011c.mp4": [
+      "black"
+    ],
+    "why_shot_011d.mp4": [
+      "black"
+    ],
+    "why_shot_011e.mp4": [
+      "black"
+    ],
+    "why_shot_011f.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_011i.mp4": [
+      "black"
+    ],
+    "why_shot_018a.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_018b.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_018c.mp4": [
+      "eddie",
+      "black",
+      "horror"
+    ],
+    "why_shot_018d.mp4": [
+      "black",
+      "night"
+    ],
+    "why_shot_018e.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_018f.mp4": [
+      "black",
+      "night"
+    ],
+    "why_shot_018h.mp4": [
+      "white"
+    ],
+    "why_shot_018j.mp4": [
+      "black",
+      "night"
+    ],
+    "why_shot_019a.mp4": [
+      "white"
+    ],
+    "why_shot_019b.mp4": [
+      "sex",
+      "white"
+    ],
+    "why_shot_019c.mp4": [
+      "black"
+    ],
+    "why_shot_020a.mp4": [
+      "black"
+    ],
+    "why_shot_020b.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_021.mp4": [
+      "black",
+      "night"
+    ],
+    "why_shot_022.mp4": [
+      "black"
+    ],
+    "why_shot_029a.mp4": [
+      "black"
+    ],
+    "why_shot_040.mp4": [
+      "black"
+    ],
+    "why_shot_041.mp4": [
+      "black"
+    ],
+    "why_shot_043.mp4": [
+      "black"
+    ],
+    "why_shot_053c.mp4": [
+      "white"
+    ],
+    "why_shot_053d.mp4": [
+      "white"
+    ],
+    "why_shot_053e.mp4": [
+      "white"
+    ],
+    "why_shot_059c.mp4": [
+      "black",
+      "horror"
+    ],
+    "why_shot_059d.mp4": [
+      "black"
+    ],
+    "why_shot_060a.mp4": [
+      "day",
+      "street"
+    ],
+    "why_shot_060b.mp4": [
+      "day",
+      "street"
+    ],
+    "why_shot_062.mp4": [
+      "black",
+      "night"
+    ],
+    "why_shot_064.mp4": [
+      "day",
+      "street"
+    ],
+    "why_shot_066.mp4": [
+      "day",
+      "street"
+    ],
+    "why_shot_070.mp4": [
+      "black"
+    ],
+    "why_shot_073b.mp4": [
+      "dancing",
+      "black",
+      "night"
+    ],
+    "why_shot_073c.mp4": [
+      "black",
+      "night"
+    ],
+    "why_shot_073f.mp4": [
+      "black"
+    ],
+    "why_shot_073g.mp4": [
+      "black"
+    ],
+    "why_shot_073h.mp4": [
+      "black"
+    ],
+    "why_shot_080a.mp4": [
+      "eddie",
+      "black",
+      "horror"
+    ],
+    "why_shot_080b.mp4": [
+      "black"
+    ],
+    "why_shot_080c.mp4": [
+      "eddie",
+      "black",
+      "horror"
+    ],
+    "why_shot_081a.mp4": [
+      "black"
+    ],
+    "why_shot_081b.mp4": [
+      "black"
+    ],
+    "why_shot_081d.mp4": [
+      "black"
+    ],
+    "why_shot_085a.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_085b.mp4": [
+      "black"
+    ],
+    "why_shot_085c.mp4": [
+      "black"
+    ],
+    "why_shot_085d.mp4": [
+      "black"
+    ],
+    "why_shot_085e.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_085f.mp4": [
+      "black",
+      "horror"
+    ],
+    "why_shot_085g.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_085h.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_085j.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_085k.mp4": [
+      "black"
+    ],
+    "why_shot_085l.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_087a.mp4": [
+      "black",
+      "night"
+    ],
+    "why_shot_087b.mp4": [
+      "black"
+    ],
+    "why_shot_087c.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_087d.mp4": [
+      "black"
+    ],
+    "why_shot_087e.mp4": [
+      "black"
+    ],
+    "why_shot_090c.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_090d.mp4": [
+      "black"
+    ],
+    "why_shot_090f.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_090j.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_090n.mp4": [
+      "eddie",
+      "black"
+    ],
+    "why_shot_107.mp4": [
+      "eddie",
+      "black"
+    ]
+  }
+}

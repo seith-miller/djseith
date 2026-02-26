@@ -1,0 +1,26 @@
+# Python
+venv/
+venv313_backup/
+__pycache__/
+*.pyc
+
+# Audio library (processed stems/mixes)
+audio/library/
+
+# Project output (rendered videos, flyers, etc.)
+**/output/
+
+# Large media assets (downloaded clips, raw video)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.flac
+
+# OS
+.DS_Store
+
+# Allow source stills (checked into repo, not videos)
+!**/source/stills/**
