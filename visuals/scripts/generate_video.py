@@ -191,6 +191,96 @@ def build_layer(layer_idx, sections, beat_times, shots, favorites, total_duratio
     return clips
 
 
+def inject_solos(clips, solos, layer_idx):
+    """Splice forced solo clips into a layer timeline.
+
+    For layer 0: replaces the collage with the solo source video.
+    For layers 1+: replaces the solo window with black (transparent under blend).
+
+    Each solo is {time, path, duration}.  clips are [{path, inpoint, duration, ...}].
+    """
+    if not solos:
+        return clips
+
+    result = []
+    t = 0.0  # running position in timeline
+
+    # sort solos by time
+    solos = sorted(solos, key=lambda s: s['time'])
+    solo_idx = 0
+
+    for clip in clips:
+        clip_start = t
+        clip_end   = t + clip['duration']
+        remaining  = dict(clip)  # copy we'll trim from
+
+        while solo_idx < len(solos):
+            solo = solos[solo_idx]
+            solo_start = solo['time']
+            solo_end   = solo['time'] + solo['duration']
+
+            # solo is entirely past this clip
+            if solo_start >= clip_end - 0.01:
+                break
+
+            # solo is entirely before current position (already handled)
+            if solo_end <= clip_start + 0.01:
+                solo_idx += 1
+                continue
+
+            # emit portion before solo starts (if any)
+            pre = solo_start - clip_start
+            if pre > 0.05:
+                pre_clip = dict(remaining)
+                pre_clip['duration'] = pre
+                result.append(pre_clip)
+
+            # emit the solo clip (or black for overlay layers)
+            solo_dur_here = min(solo_end, clip_end) - max(solo_start, clip_start)
+            if solo_dur_here > 0.01:
+                if layer_idx == 0:
+                    # play the forced source video from beginning
+                    solo_inpoint = max(0, clip_start - solo_start) if clip_start > solo_start else 0
+                    result.append({
+                        'path': solo['path'],
+                        'inpoint': solo_inpoint,
+                        'duration': solo_dur_here,
+                        'file_duration': solo['duration'],
+                        'slowdown': 1.0,
+                    })
+                else:
+                    result.append({
+                        'path': 'black',
+                        'inpoint': 0,
+                        'duration': solo_dur_here,
+                        'file_duration': float('inf'),
+                        'slowdown': 1.0,
+                    })
+
+            # advance clip_start past this solo
+            consumed = max(solo_start, clip_start) + solo_dur_here - clip_start
+            clip_start += consumed
+            # adjust remaining clip's inpoint
+            if remaining['path'] != 'black':
+                remaining['inpoint'] = remaining['inpoint'] + consumed / remaining.get('slowdown', 1.0)
+            remaining['duration'] = clip_end - clip_start
+
+            if solo_end <= clip_end + 0.01:
+                solo_idx += 1
+
+            if remaining['duration'] < 0.05:
+                break
+
+        # emit whatever's left of the clip after all solos
+        if remaining['duration'] > 0.05 and clip_start < clip_end - 0.01:
+            remaining['duration'] = clip_end - clip_start
+            result.append(remaining)
+
+        t = clip_end
+
+    return result
+
+
 # ── ffmpeg helpers ────────────────────────────────────────────────────────────
 
 def _render_segment(args):
@@ -774,13 +864,15 @@ def main():
                     help="White brightness: silence=white, loud=blown-out")
     ap.add_argument("--strobe-hz",       type=float, default=0.0,
                     help="Strobe frequency in Hz (0=off, e.g. 2.5)")
-    ap.add_argument("--strobe-limit",    type=float, default=3.0,
-                    help="Hard safety cap for strobe Hz (default 3.0)")
+    ap.add_argument("--strobe-limit",    type=float, default=1.5,
+                    help="Hard safety cap for strobe Hz (default 1.5)")
     ap.add_argument("--strobe-depth",    type=float, default=0.8,
                     help="Strobe depth 0-1 (0=subtle, 1=full, default 0.8)")
     ap.add_argument("--strobe-sections", default="high",
                     choices=["high", "all", "none"],
                     help="Which sections strobe: high-energy, all, none")
+    ap.add_argument("--solo",            nargs="+", default=None, metavar="TIME:PATH",
+                    help="Force a solo clip at TIME (seconds). Format: 60:/path/to/clip.mp4")
     ap.add_argument("--crf",             type=int, default=26,
                     help="H.264 CRF quality (0=lossless, 26=default, higher=smaller file)")
     args = ap.parse_args()
@@ -821,6 +913,22 @@ def main():
     print(f"  Energy thresholds: 1-layer ≤ {thresholds[0]:.3f}, 2-layer ≤ {thresholds[1]:.3f}, 3-layer above")
     print(f"  Max layers needed: {max_layers}")
 
+    # ── parse solo clips ────────────────────────────────────────────────────
+    solos = []
+    if args.solo:
+        for spec in args.solo:
+            sep = spec.index(':')
+            t = float(spec[:sep])
+            path = spec[sep + 1:]
+            probe = subprocess.run(
+                ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                 "-of", "csv=p=0", path],
+                capture_output=True, text=True,
+            )
+            dur = float(probe.stdout.strip())
+            solos.append({'time': t, 'path': path, 'duration': dur})
+            print(f"  Solo @ {t:.1f}s: {Path(path).name} ({dur:.1f}s)")
+
     with tempfile.TemporaryDirectory() as tmpdir:
         tmpdir = Path(tmpdir)
         layer_paths = []
@@ -829,6 +937,8 @@ def main():
             print(f"\nLayer {li}:")
             clips = build_layer(li, sections, beat_times, shots,
                                 favorites, duration, thresholds, rng)
+            if solos:
+                clips = inject_solos(clips, solos, li)
             n_cuts = len(clips)
             total  = sum(c['duration'] for c in clips)
             print(f"  {n_cuts} clips, {total:.1f}s")
