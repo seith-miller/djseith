@@ -1,5 +1,8 @@
 demucs
 librosa
+torch
 torchcodec
+numpy
 Pillow
+pytest
 rembg

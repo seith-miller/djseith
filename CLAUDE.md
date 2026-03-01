@@ -35,13 +35,15 @@ SEITH often dictates rather than types. Read intent, not literal transcription. 
 
 ## Python Environment
 
-The project venv at `venv/` references a deleted Python 3.11 interpreter — `pip` is broken inside it. Scripts still run fine via `venv/bin/python`.
+Project uses **Python 3.12** via `venv/` (rebuilt from `/opt/homebrew/bin/python3.12`). pip works normally.
 
 | Task | Use |
 |---|---|
 | Run pipeline scripts | `venv/bin/python visuals/scripts/generate_video.py ...` |
-| pip install | `/opt/homebrew/bin/pip3 install --break-system-packages` |
+| pip install | `venv/bin/pip install <package>` |
 | rembg (background removal) | `/opt/homebrew/bin/python3` — installed system-wide |
+
+**PyTorch compositing:** The render pipeline uses PyTorch for GPU-accelerated compositing (MPS on Mac, CUDA on NVIDIA, CPU fallback). Use `--legacy` flag to fall back to the old ffmpeg filter graph pipeline.
 
 ---
 
