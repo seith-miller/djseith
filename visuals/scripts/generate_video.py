@@ -38,6 +38,25 @@ DEFAULT_OUTPUT  = _PROJECT / "output/live-visuals/blue_monday_v1.mp4"
 MOTION_MAX = 0.243
 
 
+def resolve_track_metadata(audio_path: str) -> tuple[Path | None, Path | None]:
+    """Auto-resolve phrases.json and snare.json from the track directory.
+
+    If --audio points to a file inside audio/library/<TrackName>/,
+    look for phrases.json and snare.json alongside the audio.
+    Returns (phrases_path, snare_path) — either may be None.
+    """
+    audio = Path(audio_path).resolve()
+    track_dir = audio.parent
+
+    phrases = track_dir / "phrases.json"
+    snare = track_dir / "snare.json"
+
+    return (
+        phrases if phrases.exists() else None,
+        snare if snare.exists() else None,
+    )
+
+
 # ── section characterization ──────────────────────────────────────────────────
 
 def compute_thresholds(sections):
@@ -885,6 +904,15 @@ def main():
 
     rng = random.Random(args.seed)
     w, h = (854, 480) if args.preview else (W, H)
+
+    # Auto-resolve metadata from track directory if not explicitly provided
+    auto_phrases, auto_snare = resolve_track_metadata(args.audio)
+    if args.phrases == str(DEFAULT_PHRASES) and auto_phrases:
+        print(f"  Auto-resolved phrases: {auto_phrases}")
+        args.phrases = str(auto_phrases)
+    if args.snare is None and auto_snare:
+        print(f"  Auto-resolved snare: {auto_snare}")
+        args.snare = str(auto_snare)
 
     print("Loading data...")
     phrases    = json.loads(Path(args.phrases).read_text())

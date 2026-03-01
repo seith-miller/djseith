@@ -13,7 +13,12 @@ Peaks in the impact curve = likely section boundaries.
 import argparse, json
 import numpy as np
 import librosa
-import essentia.standard as es
+
+try:
+    import essentia.standard as es
+    HAS_ESSENTIA = True
+except ImportError:
+    HAS_ESSENTIA = False
 
 def snap_to_bar(beat_idx, total_beats, bar_len=4):
     """Snap a beat index to the nearest bar boundary."""
@@ -48,26 +53,34 @@ def analyze(audio_path: str, bpm: float = None, n_sections: int = None,
     duration = len(y) / sr
     print(f"Duration: {duration:.1f}s  SR: {sr}")
 
-    # beat tracking via Essentia RhythmExtractor2013 (more accurate than librosa)
-    print("  Beat tracking (Essentia RhythmExtractor2013)...")
-    rhythm = es.RhythmExtractor2013(method="multifeature")
-    if bpm:
-        # constrain to known BPM ±2%
-        bpm_tol = bpm * 0.02
-        tempo_est, beat_times_es, _, _, _ = rhythm(y)
-        # if detected tempo is off, recompute with librosa at fixed BPM
-        if abs(tempo_est - bpm) > bpm_tol * 2:
-            print(f"  Essentia tempo {tempo_est:.1f} differs from --bpm {bpm}, using fixed BPM")
-            beat_times_arr = librosa.beat.beat_track(y=y, sr=sr, bpm=bpm, units='time')[1]
-            beat_times = np.array(beat_times_arr)
-            tempo = bpm
+    # beat tracking: Essentia if available, else librosa
+    if HAS_ESSENTIA:
+        print("  Beat tracking (Essentia RhythmExtractor2013)...")
+        rhythm = es.RhythmExtractor2013(method="multifeature")
+        if bpm:
+            bpm_tol = bpm * 0.02
+            tempo_est, beat_times_es, _, _, _ = rhythm(y)
+            if abs(tempo_est - bpm) > bpm_tol * 2:
+                print(f"  Essentia tempo {tempo_est:.1f} differs from --bpm {bpm}, using librosa")
+                beat_times_arr = librosa.beat.beat_track(y=y, sr=sr, bpm=bpm, units='time')[1]
+                beat_times = np.array(beat_times_arr)
+                tempo = bpm
+            else:
+                beat_times = np.array(beat_times_es)
+                tempo = float(tempo_est)
         else:
+            tempo_est, beat_times_es, _, _, _ = rhythm(y)
             beat_times = np.array(beat_times_es)
             tempo = float(tempo_est)
     else:
-        tempo_est, beat_times_es, _, _, _ = rhythm(y)
-        beat_times = np.array(beat_times_es)
-        tempo = float(tempo_est)
+        print("  Beat tracking (librosa)...")
+        if bpm:
+            tempo = bpm
+            _, beat_frames_lib = librosa.beat.beat_track(y=y, sr=sr, bpm=bpm)
+        else:
+            tempo_est, beat_frames_lib = librosa.beat.beat_track(y=y, sr=sr)
+            tempo = float(tempo_est.item() if hasattr(tempo_est, 'item') else tempo_est)
+        beat_times = librosa.frames_to_time(beat_frames_lib, sr=sr)
 
     beat_frames = librosa.time_to_frames(beat_times, sr=sr)
     print(f"  Tempo: {tempo:.1f} BPM, {len(beat_times)} beats detected")
