@@ -19,6 +19,9 @@ audio/library/
 *.mp3
 *.flac
 
+# Secrets
+.env
+
 # OS
 .DS_Store
 

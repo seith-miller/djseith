@@ -1,0 +1,178 @@
+name: Render Videos
+
+on:
+  workflow_dispatch:
+    inputs:
+      track:
+        description: "Track directory name (e.g. BlueMonday_130_Em). Leave empty for all tracks."
+        required: false
+        default: ""
+      preview:
+        description: "Render at 480p preview quality"
+        required: false
+        type: boolean
+        default: true
+      legacy:
+        description: "Use legacy ffmpeg pipeline (no PyTorch)"
+        required: false
+        type: boolean
+        default: true
+
+env:
+  R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET || 'djseith-assets' }}
+
+jobs:
+  # Build track matrix: either a single track or all tracks from R2
+  enumerate:
+    runs-on: ubuntu-latest
+    outputs:
+      tracks: ${{ steps.list.outputs.tracks }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install boto3
+        run: pip install boto3
+
+      - name: List tracks
+        id: list
+        run: |
+          if [ -n "${{ inputs.track }}" ]; then
+            echo "tracks=[\"${{ inputs.track }}\"]" >> "$GITHUB_OUTPUT"
+          else
+            python -c "
+          import boto3, json, os
+          from botocore.config import Config
+          client = boto3.client('s3',
+              endpoint_url=os.environ['R2_ENDPOINT'],
+              aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],
+              aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
+              config=Config(signature_version='s3v4'),
+              region_name='auto')
+          paginator = client.get_paginator('list_objects_v2')
+          tracks = set()
+          for page in paginator.paginate(Bucket=os.environ.get('R2_BUCKET', 'djseith-assets'), Prefix='audio/library/'):
+              for obj in page.get('Contents', []):
+                  parts = obj['Key'].split('/')
+                  if len(parts) >= 3:
+                      tracks.add(parts[2])
+          result = sorted(tracks)
+          print(f'Found {len(result)} tracks')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f'tracks={json.dumps(result)}\n')
+          "
+          fi
+
+  render:
+    needs: enumerate
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        track: ${{ fromJson(needs.enumerate.outputs.tracks) }}
+      fail-fast: false
+      max-parallel: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install boto3 librosa numpy scipy scikit-learn Pillow torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Pull assets from R2
+        run: |
+          python scripts/r2_sync.py pull --track ${{ matrix.track }}
+          python scripts/r2_sync.py pull --audio-only  # noop if already pulled, but ensures metadata
+          # Pull shared assets (shots, stills, project data)
+          python -c "
+          import boto3, os
+          from botocore.config import Config
+          client = boto3.client('s3',
+              endpoint_url=os.environ['R2_ENDPOINT'],
+              aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],
+              aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
+              config=Config(signature_version='s3v4'),
+              region_name='auto')
+          bucket = os.environ.get('R2_BUCKET', 'djseith-assets')
+          paginator = client.get_paginator('list_objects_v2')
+          for prefix in ['projects/']:
+              for page in paginator.paginate(Bucket=bucket, Prefix=prefix):
+                  for obj in page.get('Contents', []):
+                      key = obj['Key']
+                      os.makedirs(os.path.dirname(key), exist_ok=True)
+                      print(f'  Pulling {key}')
+                      client.download_file(bucket, key, key)
+          "
+
+      - name: Find audio and render
+        run: |
+          TRACK="${{ matrix.track }}"
+          MIX=$(ls audio/library/${TRACK}/4_Mix_*.wav 2>/dev/null | head -1)
+
+          if [ -z "$MIX" ]; then
+            echo "::warning::No mix stem found for ${TRACK}, skipping"
+            exit 0
+          fi
+
+          ARGS="--audio ${MIX} --crf 26"
+
+          if [ "${{ inputs.preview }}" = "true" ]; then
+            ARGS="${ARGS} --preview"
+          fi
+
+          if [ "${{ inputs.legacy }}" = "true" ]; then
+            ARGS="${ARGS} --legacy"
+          fi
+
+          OUTPUT="output/${TRACK}.mp4"
+          ARGS="${ARGS} --output ${OUTPUT}"
+
+          echo "Rendering: python visuals/scripts/generate_video.py ${ARGS}"
+          mkdir -p output
+          python visuals/scripts/generate_video.py ${ARGS}
+
+      - name: Upload render artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-${{ matrix.track }}
+          path: output/*.mp4
+          retention-days: 7
+          if-no-files-found: ignore
+
+  # Optional: upload all renders back to R2
+  collect:
+    needs: render
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: renders/
+          pattern: render-*
+          merge-multiple: true
+
+      - name: Summary
+        run: |
+          echo "## Render Results" >> $GITHUB_STEP_SUMMARY
+          if [ -d renders ]; then
+            count=$(find renders -name "*.mp4" | wc -l)
+            echo "**${count} videos rendered**" >> $GITHUB_STEP_SUMMARY
+            find renders -name "*.mp4" -exec ls -lh {} \; | while read line; do
+              echo "- ${line}" >> $GITHUB_STEP_SUMMARY
+            done
+          else
+            echo "No renders produced." >> $GITHUB_STEP_SUMMARY
+          fi
