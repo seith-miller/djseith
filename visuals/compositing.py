@@ -422,8 +422,7 @@ def composite_frame(
                 break  # only one still at a time
 
     # Pillarbox
-    pb_color = 1.0 if white_mode else 0.0
-    result = apply_pillarbox(result, bar_w, color=pb_color)
+    result = apply_pillarbox(result, bar_w, color=0.0)
 
     # Snare contrast flash
     if snare_times:
