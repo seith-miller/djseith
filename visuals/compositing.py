@@ -71,6 +71,126 @@ class FrameDecoder:
         self._proc.wait()
 
 
+class ClipDecoder:
+    """Decode frames from a sequence of clips for one layer.
+
+    Instead of pre-rendering each clip to a temp file and concatenating,
+    this opens one ffmpeg pipe per clip as needed and reads frames sequentially.
+    Handles seeking, slowdown, scale-to-fit, and black (inactive) segments.
+
+    Usage:
+        dec = ClipDecoder(clips, width, height, fps)
+        for fi in range(total_frames):
+            frame = dec.read_frame()  # (H, W, 3) float [0, 1]
+        dec.close()
+    """
+
+    def __init__(self, clips: list, width: int, height: int, fps: int):
+        self.width = width
+        self.height = height
+        self.fps = fps
+        self._frame_size = width * height * 3
+        self._black = torch.zeros(height, width, 3)
+
+        # Build frame-level timeline: for each output frame, which clip segment?
+        # Each clip: {path, inpoint, duration, file_duration, slowdown}
+        self._segments = []  # [(start_frame, end_frame, clip)]
+        frame_pos = 0
+        for clip in clips:
+            n_frames = max(1, round(clip['duration'] * fps))
+            self._segments.append((frame_pos, frame_pos + n_frames, clip))
+            frame_pos += n_frames
+
+        self._seg_idx = 0
+        self._proc = None
+        self._frames_read = 0  # frames read from current ffmpeg pipe
+
+    def _open_clip(self, clip):
+        """Open an ffmpeg pipe for a clip."""
+        self._close_proc()
+
+        if clip['path'] == 'black':
+            self._proc = None
+            return
+
+        slowdown = clip.get('slowdown', 1.0)
+        inpoint = clip['inpoint']
+
+        # Build ffmpeg command: seek, decode, scale-to-fit, pad
+        cmd = ["ffmpeg"]
+        if inpoint > 0.05:
+            cmd += ["-ss", f"{inpoint:.4f}"]
+        cmd += ["-i", clip['path']]
+
+        # Build video filter
+        filters = []
+        if slowdown != 1.0:
+            filters.append(f"setpts={slowdown:.4f}*PTS")
+        filters.append(f"scale={self.width}:{self.height}:force_original_aspect_ratio=decrease")
+        filters.append(f"pad={self.width}:{self.height}:(ow-iw)/2:(oh-ih)/2:black")
+        filters.append(f"fps={self.fps}")
+
+        cmd += [
+            "-vf", ",".join(filters),
+            "-f", "rawvideo", "-pix_fmt", "rgb24",
+            "-v", "error", "-"
+        ]
+
+        self._proc = subprocess.Popen(cmd, stdout=subprocess.PIPE,
+                                       stderr=subprocess.PIPE)
+        self._frames_read = 0
+
+    def _close_proc(self):
+        if self._proc is not None:
+            self._proc.stdout.close()
+            self._proc.terminate()
+            self._proc.wait()
+            self._proc = None
+
+    def read_frame(self) -> torch.Tensor:
+        """Read the next frame across all clips in sequence."""
+        # Find current segment
+        while self._seg_idx < len(self._segments):
+            start_f, end_f, clip = self._segments[self._seg_idx]
+            total_frames_so_far = sum(
+                s[1] - s[0] for s in self._segments[:self._seg_idx]
+            ) + self._frames_read
+
+            # Need to advance to next segment?
+            seg_len = end_f - start_f
+            if self._frames_read >= seg_len:
+                self._seg_idx += 1
+                self._frames_read = 0
+                self._close_proc()
+                continue
+
+            # Open pipe if needed
+            if self._proc is None and clip['path'] != 'black':
+                self._open_clip(clip)
+
+            # Black frame
+            if clip['path'] == 'black':
+                self._frames_read += 1
+                return self._black
+
+            # Read from ffmpeg pipe
+            raw = self._proc.stdout.read(self._frame_size)
+            self._frames_read += 1
+            if len(raw) == self._frame_size:
+                arr = np.frombuffer(raw, dtype=np.uint8).reshape(
+                    self.height, self.width, 3)
+                self._last_frame = torch.from_numpy(arr.copy()).float() / 255.0
+                return self._last_frame
+            else:
+                # Source ended early (clip shorter than expected) — hold last or black
+                return getattr(self, '_last_frame', self._black)
+
+        return self._black
+
+    def close(self):
+        self._close_proc()
+
+
 def decode_still(path: str, width: int, height: int) -> torch.Tensor:
     """Decode a PNG still with alpha channel.
 

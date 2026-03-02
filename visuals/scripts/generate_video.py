@@ -21,7 +21,7 @@ import numpy as np
 import sys; sys.path.insert(0, str(Path(__file__).parent.parent))
 from config import RESOLUTION, FPS, PILLARBOX_RATIO
 from compositing import (
-    get_device, FrameDecoder, decode_still,
+    get_device, ClipDecoder, FrameDecoder, decode_still,
     FrameEncoder, composite_frame,
 )
 
@@ -963,69 +963,71 @@ def main():
             solos.append({'time': t, 'path': path, 'duration': dur})
             print(f"  Solo @ {t:.1f}s: {Path(path).name} ({dur:.1f}s)")
 
-    with tempfile.TemporaryDirectory() as tmpdir:
-        tmpdir = Path(tmpdir)
-        layer_paths = []
+    # ── compute shared data (both paths need this) ───────────────────────
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
+    bar_w = int((w - h * PILLARBOX_RATIO) / 2)
 
-        for li in range(max_layers):
-            print(f"\nLayer {li}:")
-            clips = build_layer(li, sections, beat_times, shots,
-                                favorites, duration, thresholds, rng)
-            if solos:
-                clips = inject_solos(clips, solos, li)
-            n_cuts = len(clips)
-            total  = sum(c['duration'] for c in clips)
-            print(f"  {n_cuts} clips, {total:.1f}s")
-
-            layer_mp4 = tmpdir / f"layer{li}.mp4"
-            render_layer(clips, layer_mp4, w, h, FPS, tmpdir, li)
-            layer_paths.append(layer_mp4)
-
-        print(f"\nCompositing {max_layers} layer(s) + audio...")
-        Path(args.output).parent.mkdir(parents=True, exist_ok=True)
-        bar_w = int((w - h * PILLARBOX_RATIO) / 2)
-
-        # ── compute shared data (both paths need this) ───────────────────────
-        envelope = None
-        if not args.no_brightness:
-            print("\nComputing brightness envelope...")
-            n_frames = int(np.ceil(duration * FPS)) + 4
-            envelope = compute_brightness_envelope(
-                args.audio, n_frames, FPS, args.brightness_release,
+    envelope = None
+    if not args.no_brightness:
+        print("\nComputing brightness envelope...")
+        n_frames = int(np.ceil(duration * FPS)) + 4
+        envelope = compute_brightness_envelope(
+            args.audio, n_frames, FPS, args.brightness_release,
+        )
+        if args.brightness_smooth > 0:
+            envelope = smooth_envelope(envelope, FPS, args.brightness_smooth)
+            print(f"    Smoothed envelope (window={args.brightness_smooth}s): "
+                  f"mean={envelope.mean():.2f}  min={envelope.min():.2f}  "
+                  f"max={envelope.max():.2f}")
+        if args.strobe_hz > 0:
+            envelope = apply_strobe(
+                envelope, FPS, args.strobe_hz,
+                args.strobe_depth, args.strobe_limit,
+                sections, args.strobe_sections, thresholds,
             )
-            if args.brightness_smooth > 0:
-                envelope = smooth_envelope(envelope, FPS, args.brightness_smooth)
-                print(f"    Smoothed envelope (window={args.brightness_smooth}s): "
-                      f"mean={envelope.mean():.2f}  min={envelope.min():.2f}  "
-                      f"max={envelope.max():.2f}")
-            if args.strobe_hz > 0:
-                envelope = apply_strobe(
-                    envelope, FPS, args.strobe_hz,
-                    args.strobe_depth, args.strobe_limit,
-                    sections, args.strobe_sections, thresholds,
-                )
 
-        still_schedule = []
-        if args.stills:
-            section_starts = [s['start_time'] for s in sections]
-            still_schedule = schedule_stills(
-                section_starts, beat_times, args.stills,
-                max_dur=args.stills_max_dur,
-                min_gap=args.stills_min_gap,
-                rng=rng,
-                width=w, height=h,
-            )
-            print(f"\n  Still schedule: {len(still_schedule)} appearances "
-                  f"(max_dur={args.stills_max_dur}s, min_gap={args.stills_min_gap}s)")
+    still_schedule = []
+    if args.stills:
+        section_starts = [s['start_time'] for s in sections]
+        still_schedule = schedule_stills(
+            section_starts, beat_times, args.stills,
+            max_dur=args.stills_max_dur,
+            min_gap=args.stills_min_gap,
+            rng=rng,
+            width=w, height=h,
+        )
+        print(f"\n  Still schedule: {len(still_schedule)} appearances "
+              f"(max_dur={args.stills_max_dur}s, min_gap={args.stills_min_gap}s)")
 
-        snare_times = []
-        if args.snare:
-            snare_data  = json.loads(Path(args.snare).read_text())
-            snare_times = snare_data["snare_times"]
+    snare_times = []
+    if args.snare:
+        snare_data  = json.loads(Path(args.snare).read_text())
+        snare_times = snare_data["snare_times"]
 
-        if args.legacy:
-            # ── LEGACY: ffmpeg filter graph pipeline ─────────────────────────
-            print("\n[legacy mode] Using ffmpeg filter graph pipeline")
+    # ── build clip lists for all layers ──────────────────────────────────
+    all_layer_clips = []
+    for li in range(max_layers):
+        print(f"\nLayer {li}:")
+        clips = build_layer(li, sections, beat_times, shots,
+                            favorites, duration, thresholds, rng)
+        if solos:
+            clips = inject_solos(clips, solos, li)
+        n_cuts = len(clips)
+        total  = sum(c['duration'] for c in clips)
+        print(f"  {n_cuts} clips, {total:.1f}s")
+        all_layer_clips.append(clips)
+
+    if args.legacy:
+        # ── LEGACY: ffmpeg subprocess pipeline ───────────────────────────
+        print("\n[legacy mode] Using ffmpeg filter graph pipeline")
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmpdir = Path(tmpdir)
+            layer_paths = []
+            for li, clips in enumerate(all_layer_clips):
+                layer_mp4 = tmpdir / f"layer{li}.mp4"
+                render_layer(clips, layer_mp4, w, h, FPS, tmpdir, li)
+                layer_paths.append(layer_mp4)
+
             composite_mp4 = tmpdir / "composite.mp4"
             composite_layers(layer_paths, args.audio, composite_mp4,
                              args.blend, args.opacity, w, h, apply_pillarbox=False, crf=28)
@@ -1039,72 +1041,72 @@ def main():
                 snare_times=snare_times,
                 white_mode=args.white_mode,
             )
-        else:
-            # ── PYTORCH: streaming frame-by-frame GPU compositing ────────────
-            device = get_device()
-            print(f"\n[PyTorch] Compositing on {device}")
+    else:
+        # ── PYTORCH: single-pass GPU render (no intermediate files) ──────
+        device = get_device()
+        print(f"\n[PyTorch] Single-pass render on {device}")
 
-            # Open streaming decoders (one per layer, ~1 frame in memory each)
-            print("  Opening layer decoders...")
-            decoders = []
-            for li, lp in enumerate(layer_paths):
-                print(f"    Layer {li}: {lp.name}")
-                decoders.append(FrameDecoder(str(lp), w, h, FPS))
+        # Open ClipDecoders — one per layer, reads source clips directly
+        print("  Opening clip decoders...")
+        decoders = []
+        for li, clips in enumerate(all_layer_clips):
+            print(f"    Layer {li}: {len(clips)} clips")
+            decoders.append(ClipDecoder(clips, w, h, FPS))
 
-            # Pre-decode and cache still assets (small — a few MB total)
-            still_cache = {}
-            if still_schedule:
-                print(f"  Decoding {len(still_schedule)} still assets...")
-                for item in still_schedule:
-                    sw = item['placement'].get('img_w', w)
-                    sh = item['placement'].get('img_h', h)
-                    cache_key = f"{item['path']}_{sw}x{sh}"
-                    if cache_key not in still_cache:
-                        still_cache[cache_key] = decode_still(item['path'], sw, sh)
-                    item['_cache_key'] = cache_key
+        # Pre-decode and cache still assets (small — a few MB total)
+        still_cache = {}
+        if still_schedule:
+            print(f"  Decoding {len(still_schedule)} still assets...")
+            for item in still_schedule:
+                sw = item['placement'].get('img_w', w)
+                sh = item['placement'].get('img_h', h)
+                cache_key = f"{item['path']}_{sw}x{sh}"
+                if cache_key not in still_cache:
+                    still_cache[cache_key] = decode_still(item['path'], sw, sh)
+                item['_cache_key'] = cache_key
 
-            # Compute total frames
-            total_frames = int(np.ceil(duration * FPS))
-            print(f"  Compositing {total_frames} frames...")
+        # Compute total frames
+        total_frames = int(np.ceil(duration * FPS))
+        print(f"  Compositing {total_frames} frames...")
 
-            # Open encoder
-            encoder = FrameEncoder(
-                str(args.output), w, h, FPS,
-                audio_path=args.audio, crf=args.crf,
-            )
+        # Open encoder
+        encoder = FrameEncoder(
+            str(args.output), w, h, FPS,
+            audio_path=args.audio, crf=args.crf,
+        )
 
-            try:
-                for fi in range(total_frames):
-                    if fi % (FPS * 10) == 0:
-                        pct = fi / total_frames * 100
-                        print(f"    frame {fi}/{total_frames} ({pct:.0f}%)")
+        try:
+            for fi in range(total_frames):
+                if fi % (FPS * 10) == 0:
+                    pct = fi / total_frames * 100
+                    print(f"    frame {fi}/{total_frames} ({pct:.0f}%)")
 
-                    # Read one frame from each layer decoder
-                    layer_frames = [dec.read_frame() for dec in decoders]
+                # Read one frame from each layer's clip decoder
+                layer_frames = [dec.read_frame() for dec in decoders]
 
-                    frame = composite_frame(
-                        layer_frames=layer_frames,
-                        frame_idx=fi,
-                        blend_mode=args.blend,
-                        opacity=args.opacity,
-                        envelope=envelope,
-                        still_schedule=still_schedule,
-                        still_cache=still_cache,
-                        snare_times=snare_times,
-                        bar_w=bar_w,
-                        fps=FPS,
-                        width=w,
-                        height=h,
-                        white_mode=args.white_mode,
-                        device=device,
-                    )
-                    encoder.write_frame(frame)
-            finally:
-                encoder.close()
-                for dec in decoders:
-                    dec.close()
+                frame = composite_frame(
+                    layer_frames=layer_frames,
+                    frame_idx=fi,
+                    blend_mode=args.blend,
+                    opacity=args.opacity,
+                    envelope=envelope,
+                    still_schedule=still_schedule,
+                    still_cache=still_cache,
+                    snare_times=snare_times,
+                    bar_w=bar_w,
+                    fps=FPS,
+                    width=w,
+                    height=h,
+                    white_mode=args.white_mode,
+                    device=device,
+                )
+                encoder.write_frame(frame)
+        finally:
+            encoder.close()
+            for dec in decoders:
+                dec.close()
 
-            print(f"  Encode complete → {args.output}")
+        print(f"  Encode complete → {args.output}")
 
     print(f"\nDone → {args.output}")
 
