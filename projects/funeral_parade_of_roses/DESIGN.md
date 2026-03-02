@@ -50,14 +50,40 @@ venv/bin/python visuals/scripts/generate_video.py \
 
 ---
 
-## Audio-Reactive Brightness
+## Design Modes
 
-Video layer brightness correlates with audio volume:
-- Silence → video goes black
-- Exponential release (default 1.0s) — doesn't instantly cut on quiet passages
-- **Does NOT affect 2D stills** — stills are overlaid after brightness stage
+A design mode is a coherent set of rules governing brightness, color, and framing. Each mode produces a distinct visual character from the same source material. Select with `--white-mode` (default is black mode).
 
-CLI: `--brightness-release 1.0` / `--no-brightness` to disable
+### Black Mode (default)
+
+| Element | Rule |
+|---|---|
+| Brightness blend | `multiply` — silence → black, loud → full brightness |
+| Envelope floor | 0.0 (true black in silence) |
+| Pillarbox bars | Black |
+| Snare flash | contrast=2.2, brightness=+0.06, 80ms |
+| Layer blend | `screen` at 0.45 opacity (layer 2 at 0.6× = 0.27) |
+| Cultural ref | High-contrast B&W film noir; darkness as negative space |
+
+### White Mode (`--white-mode`)
+
+| Element | Rule |
+|---|---|
+| Brightness blend | None — envelope disabled; video plays at full brightness |
+| Envelope floor | N/A |
+| Pillarbox bars | Black (same as all modes) |
+| Snare flash | Same as black mode (contrast=2.2, brightness=+0.06, 80ms) |
+| Layer blend | Same as black mode (`screen` at 0.45 opacity) |
+| Cultural ref | White as Japanese mourning color; overexposed / high-key aesthetic |
+
+### Shared across all modes
+
+- Exponential release (default 1.0s) — volume drops decay gradually, not instantly
+- 2D stills are **not** affected by the brightness envelope — overlaid after brightness stage
+- Strobe modulation (if enabled) applies to the envelope before mode-specific remapping
+- Smoothing window (if set) applies before strobe
+
+CLI: `--brightness-release 1.0` / `--no-brightness` / `--white-mode`
 
 ---
 

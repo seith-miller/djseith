@@ -13,7 +13,7 @@ Usage:
       --preview   # fast 480p draft
 """
 
-import argparse, json, random, subprocess, tempfile
+import argparse, json, os, random, subprocess, tempfile, time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -580,7 +580,7 @@ def apply_post_composite(
       1          → 2×2 grayscale envelope (piped via stdin), only when envelope is not None
       2..N+1     → still PNG paths (one per schedule entry)
     """
-    pb_color = "white" if white_mode else "black"
+    pb_color = "black"
     pillarbox = (
         f"drawbox=x=0:y=0:w={bar_w}:h=ih:color={pb_color}:t=fill,"
         f"drawbox=x=iw-{bar_w}:y=0:w={bar_w}:h=ih:color={pb_color}:t=fill"
@@ -902,6 +902,8 @@ def main():
                     help="Use legacy ffmpeg filter graph pipeline instead of PyTorch")
     args = ap.parse_args()
 
+    t_start = time.monotonic()
+    timings = {}
     rng = random.Random(args.seed)
     w, h = (854, 480) if args.preview else (W, H)
 
@@ -914,6 +916,7 @@ def main():
         print(f"  Auto-resolved snare: {auto_snare}")
         args.snare = str(auto_snare)
 
+    t_phase = time.monotonic()
     print("Loading data...")
     phrases    = json.loads(Path(args.phrases).read_text())
     shots      = load_shots(args.catalog)
@@ -963,12 +966,15 @@ def main():
             solos.append({'time': t, 'path': path, 'duration': dur})
             print(f"  Solo @ {t:.1f}s: {Path(path).name} ({dur:.1f}s)")
 
+    timings['load'] = time.monotonic() - t_phase
+
     # ── compute shared data (both paths need this) ───────────────────────
     Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     bar_w = int((w - h * PILLARBOX_RATIO) / 2)
 
+    t_phase = time.monotonic()
     envelope = None
-    if not args.no_brightness:
+    if not args.no_brightness and not args.white_mode:
         print("\nComputing brightness envelope...")
         n_frames = int(np.ceil(duration * FPS)) + 4
         envelope = compute_brightness_envelope(
@@ -1000,11 +1006,15 @@ def main():
               f"(max_dur={args.stills_max_dur}s, min_gap={args.stills_min_gap}s)")
 
     snare_times = []
-    if args.snare:
-        snare_data  = json.loads(Path(args.snare).read_text())
-        snare_times = snare_data["snare_times"]
+    # Snare flash disabled globally for now
+    # if args.snare:
+    #     snare_data  = json.loads(Path(args.snare).read_text())
+    #     snare_times = snare_data["snare_times"]
+
+    timings['precompute'] = time.monotonic() - t_phase
 
     # ── build clip lists for all layers ──────────────────────────────────
+    t_phase = time.monotonic()
     all_layer_clips = []
     for li in range(max_layers):
         print(f"\nLayer {li}:")
@@ -1017,6 +1027,9 @@ def main():
         print(f"  {n_cuts} clips, {total:.1f}s")
         all_layer_clips.append(clips)
 
+    timings['clip_build'] = time.monotonic() - t_phase
+
+    t_phase = time.monotonic()
     if args.legacy:
         # ── LEGACY: ffmpeg subprocess pipeline ───────────────────────────
         print("\n[legacy mode] Using ffmpeg filter graph pipeline")
@@ -1108,7 +1121,41 @@ def main():
 
         print(f"  Encode complete → {args.output}")
 
-    print(f"\nDone → {args.output}")
+    timings['render'] = time.monotonic() - t_phase
+    t_total = time.monotonic() - t_start
+
+    # ── performance summary ──────────────────────────────────────────────
+    import resource
+    rusage = resource.getrusage(resource.RUSAGE_CHILDREN)
+    self_rusage = resource.getrusage(resource.RUSAGE_SELF)
+    peak_mb = (self_rusage.ru_maxrss + rusage.ru_maxrss) / (1024 * 1024)
+    if sys.platform == 'linux':
+        # Linux ru_maxrss is in KB
+        peak_mb = (self_rusage.ru_maxrss + rusage.ru_maxrss) / 1024
+    output_size = Path(args.output).stat().st_size / (1024 * 1024)
+    total_frames = int(np.ceil(duration * FPS))
+
+    print(f"\n{'=' * 60}")
+    print(f"RENDER SUMMARY")
+    print(f"{'=' * 60}")
+    print(f"  Output:      {args.output}")
+    print(f"  Resolution:  {w}x{h}  {'(preview)' if args.preview else '(full)'}")
+    print(f"  Frames:      {total_frames}  ({duration:.1f}s @ {FPS} fps)")
+    print(f"  Pipeline:    {'legacy ffmpeg' if args.legacy else f'PyTorch ({get_device()})'}")
+    print(f"  File size:   {output_size:.1f} MB")
+    print(f"")
+    print(f"  Timings:")
+    print(f"    Load data:     {timings['load']:6.1f}s")
+    print(f"    Precompute:    {timings['precompute']:6.1f}s")
+    print(f"    Clip build:    {timings['clip_build']:6.1f}s")
+    print(f"    Render:        {timings['render']:6.1f}s")
+    print(f"    Total:         {t_total:6.1f}s")
+    print(f"")
+    render_fps = total_frames / timings['render'] if timings['render'] > 0 else 0
+    print(f"  Throughput:  {render_fps:.1f} fps  "
+          f"({timings['render'] / duration:.2f}x realtime)")
+    print(f"  Peak memory: {peak_mb:.0f} MB")
+    print(f"{'=' * 60}")
 
 
 if __name__ == "__main__":
