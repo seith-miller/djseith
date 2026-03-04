@@ -13,7 +13,6 @@ Peaks in the impact curve = likely section boundaries.
 import argparse, json
 import numpy as np
 import librosa
-import essentia.standard as es
 
 def snap_to_bar(beat_idx, total_beats, bar_len=4):
     """Snap a beat index to the nearest bar boundary."""
@@ -44,30 +43,20 @@ def quantize_sections(peaks, total_beats, bar_len=4, phrase_bars=4):
 def analyze(audio_path: str, bpm: float = None, n_sections: int = None,
             bar_snap: bool = False):
     print(f"Loading: {audio_path}")
-    y, sr = librosa.load(audio_path, sr=44100, mono=True)  # 44100 for Essentia
+    y, sr = librosa.load(audio_path, sr=44100, mono=True)
     duration = len(y) / sr
     print(f"Duration: {duration:.1f}s  SR: {sr}")
 
-    # beat tracking via Essentia RhythmExtractor2013 (more accurate than librosa)
-    print("  Beat tracking (Essentia RhythmExtractor2013)...")
-    rhythm = es.RhythmExtractor2013(method="multifeature")
+    # beat tracking via librosa (BPM hint required for reliable results)
     if bpm:
-        # constrain to known BPM ±2%
-        bpm_tol = bpm * 0.02
-        tempo_est, beat_times_es, _, _, _ = rhythm(y)
-        # if detected tempo is off, recompute with librosa at fixed BPM
-        if abs(tempo_est - bpm) > bpm_tol * 2:
-            print(f"  Essentia tempo {tempo_est:.1f} differs from --bpm {bpm}, using fixed BPM")
-            beat_times_arr = librosa.beat.beat_track(y=y, sr=sr, bpm=bpm, units='time')[1]
-            beat_times = np.array(beat_times_arr)
-            tempo = bpm
-        else:
-            beat_times = np.array(beat_times_es)
-            tempo = float(tempo_est)
+        print(f"  Beat tracking (librosa, BPM hint={bpm})...")
+        tempo_arr, beat_frames = librosa.beat.beat_track(y=y, sr=sr, bpm=bpm)
+        tempo = bpm
     else:
-        tempo_est, beat_times_es, _, _, _ = rhythm(y)
-        beat_times = np.array(beat_times_es)
-        tempo = float(tempo_est)
+        print("  Beat tracking (librosa, no BPM hint)...")
+        tempo_arr, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
+        tempo = float(tempo_arr[0]) if hasattr(tempo_arr, '__len__') else float(tempo_arr)
+    beat_times = librosa.frames_to_time(beat_frames, sr=sr)
 
     beat_frames = librosa.time_to_frames(beat_times, sr=sr)
     print(f"  Tempo: {tempo:.1f} BPM, {len(beat_times)} beats detected")
@@ -259,7 +248,8 @@ def print_report(result):
 def main():
     ap = argparse.ArgumentParser(description="Detect musical phrases/sections")
     ap.add_argument("audio", help="Path to audio file")
-    ap.add_argument("--bpm", type=float, help="Override BPM (skip beat detection)")
+    ap.add_argument("--bpm", type=float, required=True,
+                    help="Track BPM (required — used as hint for beat tracking)")
     ap.add_argument("-n", "--sections", type=int, help="Force N sections (default: auto)")
     ap.add_argument("-o", "--output", help="Save JSON results to file")
     ap.add_argument("--bar-snap", action="store_true",
