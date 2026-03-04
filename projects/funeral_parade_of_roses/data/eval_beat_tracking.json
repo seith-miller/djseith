@@ -1,0 +1,130 @@
+[
+  {
+    "track": "BlueMonday_130_Em",
+    "duration": 246.5,
+    "bpm_hint": 130.0,
+    "librosa_free": {
+      "tempo": 86.1,
+      "n_beats": 350,
+      "time_s": 1.5
+    },
+    "librosa_hinted": {
+      "tempo": 130.0,
+      "n_beats": 521,
+      "time_s": 0.3
+    },
+    "librosa_free_sections": 16
+  },
+  {
+    "track": "BelaLugosisDead_120_D",
+    "duration": 480.6,
+    "bpm_hint": 120.0,
+    "librosa_free": {
+      "tempo": 123.0,
+      "n_beats": 951,
+      "time_s": 7.5
+    },
+    "librosa_hinted": {
+      "tempo": 120.0,
+      "n_beats": 935,
+      "time_s": 5.8
+    },
+    "librosa_free_sections": 40
+  },
+  {
+    "track": "AtariTeenageRiotSpeed_148_Em",
+    "duration": 189.7,
+    "bpm_hint": 148.0,
+    "librosa_free": {
+      "tempo": 147.7,
+      "n_beats": 456,
+      "time_s": 2.2
+    },
+    "librosa_hinted": {
+      "tempo": 148.0,
+      "n_beats": 456,
+      "time_s": 0.2
+    },
+    "librosa_free_sections": 18
+  },
+  {
+    "track": "JoyDivisionShesLost_120_Dm",
+    "duration": 281.0,
+    "bpm_hint": 120.0,
+    "librosa_free": {
+      "tempo": 120.2,
+      "n_beats": 542,
+      "time_s": 1.3
+    },
+    "librosa_hinted": {
+      "tempo": 120.0,
+      "n_beats": 542,
+      "time_s": 0.9
+    },
+    "librosa_free_sections": 24
+  },
+  {
+    "track": "Front242Headhunter_130_F",
+    "duration": 188.7,
+    "bpm_hint": 130.0,
+    "librosa_free": {
+      "tempo": 132.5,
+      "n_beats": 351,
+      "time_s": 1.2
+    },
+    "librosa_hinted": {
+      "tempo": 130.0,
+      "n_beats": 350,
+      "time_s": 0.4
+    },
+    "librosa_free_sections": 13
+  },
+  {
+    "track": "NineInchNailsHead_120_E",
+    "duration": 260.2,
+    "bpm_hint": 120.0,
+    "librosa_free": {
+      "tempo": 120.2,
+      "n_beats": 518,
+      "time_s": 2.0
+    },
+    "librosa_hinted": {
+      "tempo": 120.0,
+      "n_beats": 518,
+      "time_s": 0.6
+    },
+    "librosa_free_sections": 21
+  },
+  {
+    "track": "TheCureAForest_120_Am",
+    "duration": 188.1,
+    "bpm_hint": 120.0,
+    "librosa_free": {
+      "tempo": 123.0,
+      "n_beats": 377,
+      "time_s": 1.2
+    },
+    "librosa_hinted": {
+      "tempo": 120.0,
+      "n_beats": 377,
+      "time_s": 0.4
+    },
+    "librosa_free_sections": 16
+  },
+  {
+    "track": "LambriniGirlsFeatPeaches_148_F#",
+    "duration": 171.7,
+    "bpm_hint": 148.0,
+    "librosa_free": {
+      "tempo": 147.7,
+      "n_beats": 396,
+      "time_s": 0.9
+    },
+    "librosa_hinted": {
+      "tempo": 148.0,
+      "n_beats": 396,
+      "time_s": 0.3
+    },
+    "librosa_free_sections": 16
+  }
+]

@@ -9,6 +9,7 @@ audio/library/
 
 # Project output (rendered videos, flyers, etc.)
 **/output/
+!**/output/rekordbox_default.png
 
 # Large media assets (downloaded clips, raw video)
 *.mp4
