@@ -127,23 +127,23 @@ jobs:
           TRACK="${{ matrix.track }}"
           AUDIO="audio/source/${TRACK}"
           BASENAME="${TRACK%.*}"
-
-          ARGS="--audio ${AUDIO} --crf 26"
-
-          if [ "${{ inputs.preview }}" = "true" ]; then
-            ARGS="${ARGS} --preview"
-          fi
-
-          if [ "${{ inputs.legacy }}" = "true" ]; then
-            ARGS="${ARGS} --legacy"
-          fi
-
           OUTPUT="output/${BASENAME}.mp4"
-          ARGS="${ARGS} --output ${OUTPUT}"
-
-          echo "Rendering: python visuals/scripts/generate_video.py ${ARGS}"
           mkdir -p output
-          python visuals/scripts/generate_video.py ${ARGS}
+
+          EXTRA_ARGS=""
+          if [ "${{ inputs.preview }}" = "true" ]; then
+            EXTRA_ARGS="${EXTRA_ARGS} --preview"
+          fi
+          if [ "${{ inputs.legacy }}" = "true" ]; then
+            EXTRA_ARGS="${EXTRA_ARGS} --legacy"
+          fi
+
+          echo "Rendering: ${TRACK}"
+          python visuals/scripts/generate_video.py \
+            --audio "${AUDIO}" \
+            --output "${OUTPUT}" \
+            --crf 26 \
+            ${EXTRA_ARGS}
 
       - name: Upload render artifact
         uses: actions/upload-artifact@v4
