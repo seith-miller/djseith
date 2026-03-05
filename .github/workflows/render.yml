@@ -89,7 +89,8 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
-          pip install boto3 librosa numpy scipy scikit-learn Pillow torch --index-url https://download.pytorch.org/whl/cpu
+          pip install boto3 librosa numpy scipy scikit-learn Pillow
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
 
       - name: Pull assets from R2
         run: |
