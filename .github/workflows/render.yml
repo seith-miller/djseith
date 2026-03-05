@@ -160,11 +160,39 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install boto3
+        run: pip install boto3
+
       - uses: actions/download-artifact@v4
         with:
           path: renders/
           pattern: render-*
           merge-multiple: true
+
+      - name: Upload renders to R2
+        run: |
+          python -c "
+          import boto3, os, glob
+          from botocore.config import Config
+          client = boto3.client('s3',
+              endpoint_url=os.environ['R2_ENDPOINT'],
+              aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],
+              aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
+              config=Config(signature_version='s3v4'),
+              region_name='auto')
+          bucket = os.environ.get('R2_BUCKET', 'djseith')
+          for mp4 in sorted(glob.glob('renders/**/*.mp4', recursive=True)):
+              filename = os.path.basename(mp4)
+              key = f'renders/{filename}'
+              size_mb = os.path.getsize(mp4) / 1024 / 1024
+              print(f'  Uploading {key} ({size_mb:.1f} MB)')
+              client.upload_file(mp4, bucket, key)
+          print('Done.')
+          "
 
       - name: Summary
         run: |
