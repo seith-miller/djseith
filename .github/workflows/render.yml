@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       track:
-        description: "Track directory name (e.g. BlueMonday_130_Em). Leave empty for all tracks."
+        description: "Track filename (e.g. Blue_Monday.mp3). Leave empty for all tracks."
         required: false
         default: ""
       preview:
@@ -22,10 +22,9 @@ env:
   R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
   R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
   R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-  R2_BUCKET: ${{ secrets.R2_BUCKET || 'djseith-assets' }}
+  R2_BUCKET: ${{ secrets.R2_BUCKET || 'djseith' }}
 
 jobs:
-  # Build track matrix: either a single track or all tracks from R2
   enumerate:
     runs-on: ubuntu-latest
     outputs:
@@ -55,17 +54,19 @@ jobs:
               aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
               config=Config(signature_version='s3v4'),
               region_name='auto')
+          bucket = os.environ.get('R2_BUCKET', 'djseith')
           paginator = client.get_paginator('list_objects_v2')
-          tracks = set()
-          for page in paginator.paginate(Bucket=os.environ.get('R2_BUCKET', 'djseith-assets'), Prefix='audio/library/'):
+          tracks = []
+          for page in paginator.paginate(Bucket=bucket, Prefix='audio/source/'):
               for obj in page.get('Contents', []):
-                  parts = obj['Key'].split('/')
-                  if len(parts) >= 3:
-                      tracks.add(parts[2])
-          result = sorted(tracks)
-          print(f'Found {len(result)} tracks')
+                  key = obj['Key']
+                  filename = key.split('/')[-1]
+                  if filename.endswith(('.mp3', '.wav', '.flac')):
+                      tracks.append(filename)
+          tracks.sort()
+          print(f'Found {len(tracks)} tracks')
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-              f.write(f'tracks={json.dumps(result)}\n')
+              f.write(f'tracks={json.dumps(tracks)}\n')
           "
           fi
 
@@ -92,9 +93,6 @@ jobs:
 
       - name: Pull assets from R2
         run: |
-          python scripts/r2_sync.py pull --track ${{ matrix.track }}
-          python scripts/r2_sync.py pull --audio-only  # noop if already pulled, but ensures metadata
-          # Pull shared assets (shots, stills, project data)
           python -c "
           import boto3, os
           from botocore.config import Config
@@ -104,28 +102,32 @@ jobs:
               aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
               config=Config(signature_version='s3v4'),
               region_name='auto')
-          bucket = os.environ.get('R2_BUCKET', 'djseith-assets')
+          bucket = os.environ.get('R2_BUCKET', 'djseith')
           paginator = client.get_paginator('list_objects_v2')
-          for prefix in ['projects/']:
-              for page in paginator.paginate(Bucket=bucket, Prefix=prefix):
-                  for obj in page.get('Contents', []):
-                      key = obj['Key']
-                      os.makedirs(os.path.dirname(key), exist_ok=True)
-                      print(f'  Pulling {key}')
-                      client.download_file(bucket, key, key)
+
+          # Pull the audio track
+          track = '${{ matrix.track }}'
+          key = f'audio/source/{track}'
+          os.makedirs('audio/source', exist_ok=True)
+          print(f'Pulling {key}')
+          client.download_file(bucket, key, key)
+
+          # Pull all project assets (shots, stills, data)
+          for page in paginator.paginate(Bucket=bucket, Prefix='projects/'):
+              for obj in page.get('Contents', []):
+                  key = obj['Key']
+                  os.makedirs(os.path.dirname(key), exist_ok=True)
+                  print(f'  Pulling {key}')
+                  client.download_file(bucket, key, key)
           "
 
-      - name: Find audio and render
+      - name: Render video
         run: |
           TRACK="${{ matrix.track }}"
-          MIX=$(ls audio/library/${TRACK}/4_Mix_*.wav 2>/dev/null | head -1)
+          AUDIO="audio/source/${TRACK}"
+          BASENAME="${TRACK%.*}"
 
-          if [ -z "$MIX" ]; then
-            echo "::warning::No mix stem found for ${TRACK}, skipping"
-            exit 0
-          fi
-
-          ARGS="--audio ${MIX} --crf 26"
+          ARGS="--audio ${AUDIO} --crf 26"
 
           if [ "${{ inputs.preview }}" = "true" ]; then
             ARGS="${ARGS} --preview"
@@ -135,7 +137,7 @@ jobs:
             ARGS="${ARGS} --legacy"
           fi
 
-          OUTPUT="output/${TRACK}.mp4"
+          OUTPUT="output/${BASENAME}.mp4"
           ARGS="${ARGS} --output ${OUTPUT}"
 
           echo "Rendering: python visuals/scripts/generate_video.py ${ARGS}"
@@ -150,7 +152,6 @@ jobs:
           retention-days: 7
           if-no-files-found: ignore
 
-  # Optional: upload all renders back to R2
   collect:
     needs: render
     runs-on: ubuntu-latest

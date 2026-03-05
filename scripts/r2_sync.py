@@ -50,7 +50,7 @@ except ImportError:
     sys.exit(1)
 
 ROOT = Path(__file__).parent.parent
-DEFAULT_BUCKET = "djseith-assets"
+DEFAULT_BUCKET = "djseith"
 
 # Asset directories to sync (relative to project root)
 SYNC_DIRS = [

@@ -127,7 +127,10 @@ def main():
         print(f"Loaded {len(catalog)} cached entries from {output}")
 
     # collect all shot paths
-    shot_paths = sorted(shots_dir.rglob("*.mp4"))
+    shot_paths = sorted(
+        p for ext in ("*.mp4", "*.avi", "*.mov")
+        for p in shots_dir.rglob(ext)
+    )
     print(f"Found {len(shot_paths)} shots in {shots_dir}")
 
     new_count = 0
@@ -141,7 +144,7 @@ def main():
             print(f"  [{i+1}/{len(shot_paths)}] SKIP (unreadable): {key}")
             continue
 
-        result["path"] = str(path)
+        result["path"] = str(path.relative_to(shots_dir.parent.parent.parent))
         catalog[key]   = result
         new_count += 1
 
