@@ -138,6 +138,12 @@ jobs:
             EXTRA_ARGS="${EXTRA_ARGS} --legacy"
           fi
 
+          # Auto-discover stills
+          STILLS=$(find projects/funeral_parade_of_roses/stills -name "*.png" 2>/dev/null | sort)
+          if [ -n "$STILLS" ]; then
+            EXTRA_ARGS="${EXTRA_ARGS} --stills ${STILLS}"
+          fi
+
           echo "Rendering: ${TRACK}"
           python visuals/scripts/generate_video.py \
             --audio "${AUDIO}" \
