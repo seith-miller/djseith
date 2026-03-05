@@ -248,8 +248,8 @@ def print_report(result):
 def main():
     ap = argparse.ArgumentParser(description="Detect musical phrases/sections")
     ap.add_argument("audio", help="Path to audio file")
-    ap.add_argument("--bpm", type=float, required=True,
-                    help="Track BPM (required — used as hint for beat tracking)")
+    ap.add_argument("--bpm", type=float, default=None,
+                    help="Track BPM hint for beat tracking (auto-detected if omitted)")
     ap.add_argument("-n", "--sections", type=int, help="Force N sections (default: auto)")
     ap.add_argument("-o", "--output", help="Save JSON results to file")
     ap.add_argument("--bar-snap", action="store_true",
