@@ -124,11 +124,11 @@ jobs:
       - name: Check for existing analysis in R2
         id: check_analysis
         if: inputs.mode == 'render'
+        env:
+          TRACK_BASENAME: ${{ matrix.track }}
         run: |
-          TRACK="${{ matrix.track }}"
-          BASENAME="${TRACK%.*}"
           python -c "
-          import boto3, os, sys
+          import boto3, os
           from botocore.config import Config
           client = boto3.client('s3',
               endpoint_url=os.environ['R2_ENDPOINT'],
@@ -137,7 +137,8 @@ jobs:
               config=Config(signature_version='s3v4'),
               region_name='auto')
           bucket = os.environ.get('R2_BUCKET', 'djseith')
-          key = f'audio/analysis/${BASENAME}.json'
+          basename = os.environ['TRACK_BASENAME'].rsplit('.', 1)[0]
+          key = f'audio/analysis/{basename}.json'
           try:
               client.head_object(Bucket=bucket, Key=key)
               print(f'Found existing analysis: {key}')
@@ -156,21 +157,23 @@ jobs:
           TRACK="${{ matrix.track }}"
           AUDIO="audio/source/${TRACK}"
           BASENAME="${TRACK%.*}"
+          ANALYSIS="audio/analysis/${BASENAME}.json"
           mkdir -p audio/analysis
 
           echo "Analyzing: ${TRACK}"
           python visuals/scripts/phrase_detect.py \
             "${AUDIO}" \
             --bar-snap \
-            -o "audio/analysis/${BASENAME}.json"
+            -o "${ANALYSIS}"
 
           echo "analysis_path=audio/analysis/${BASENAME}.json" >> "$GITHUB_OUTPUT"
 
       - name: Upload analysis to R2
         if: inputs.mode == 'full' || inputs.mode == 'analyze'
+        env:
+          TRACK_BASENAME: ${{ matrix.track }}
         run: |
-          TRACK="${{ matrix.track }}"
-          BASENAME="${TRACK%.*}"
+          BASENAME="${TRACK_BASENAME%.*}"
           python -c "
           import boto3, os
           from botocore.config import Config
@@ -181,8 +184,9 @@ jobs:
               config=Config(signature_version='s3v4'),
               region_name='auto')
           bucket = os.environ.get('R2_BUCKET', 'djseith')
-          local = 'audio/analysis/${BASENAME}.json'
-          key = f'audio/analysis/${BASENAME}.json'
+          basename = os.environ['TRACK_BASENAME'].rsplit('.', 1)[0]
+          local = f'audio/analysis/{basename}.json'
+          key = f'audio/analysis/{basename}.json'
           size_kb = os.path.getsize(local) / 1024
           print(f'Uploading {key} ({size_kb:.1f} KB)')
           client.upload_file(local, bucket, key)
@@ -190,9 +194,9 @@ jobs:
 
       - name: Pull analysis from R2
         if: inputs.mode == 'render'
+        env:
+          TRACK_BASENAME: ${{ matrix.track }}
         run: |
-          TRACK="${{ matrix.track }}"
-          BASENAME="${TRACK%.*}"
           mkdir -p audio/analysis
           python -c "
           import boto3, os
@@ -204,8 +208,9 @@ jobs:
               config=Config(signature_version='s3v4'),
               region_name='auto')
           bucket = os.environ.get('R2_BUCKET', 'djseith')
-          key = 'audio/analysis/${BASENAME}.json'
-          local = f'audio/analysis/${BASENAME}.json'
+          basename = os.environ['TRACK_BASENAME'].rsplit('.', 1)[0]
+          key = f'audio/analysis/{basename}.json'
+          local = f'audio/analysis/{basename}.json'
           print(f'Pulling {key}')
           client.download_file(bucket, key, local)
           "
@@ -242,31 +247,29 @@ jobs:
           PHRASES="audio/analysis/${BASENAME}.json"
           mkdir -p output
 
-          EXTRA_ARGS=""
+          # Build args array to handle spaces in paths
+          ARGS=(--audio "${AUDIO}" --output "${OUTPUT}" --crf 26)
+
           if [ "${{ inputs.preview }}" = "true" ]; then
-            EXTRA_ARGS="${EXTRA_ARGS} --preview"
+            ARGS+=(--preview)
           fi
           if [ "${{ inputs.legacy }}" = "true" ]; then
-            EXTRA_ARGS="${EXTRA_ARGS} --legacy"
+            ARGS+=(--legacy)
           fi
 
           # Auto-discover stills
           STILLS=$(find projects/funeral_parade_of_roses/stills -name "*.png" 2>/dev/null | sort)
           if [ -n "$STILLS" ]; then
-            EXTRA_ARGS="${EXTRA_ARGS} --stills ${STILLS}"
+            ARGS+=(--stills ${STILLS})
           fi
 
           # Use per-track analysis if available
           if [ -f "${PHRASES}" ]; then
-            EXTRA_ARGS="${EXTRA_ARGS} --phrases ${PHRASES}"
+            ARGS+=(--phrases "${PHRASES}")
           fi
 
           echo "Rendering: ${TRACK}"
-          python visuals/scripts/generate_video.py \
-            --audio "${AUDIO}" \
-            --output "${OUTPUT}" \
-            --crf 26 \
-            ${EXTRA_ARGS}
+          python visuals/scripts/generate_video.py "${ARGS[@]}"
 
       - name: Upload render artifact
         if: inputs.mode == 'full' || inputs.mode == 'render'
