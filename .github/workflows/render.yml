@@ -26,6 +26,11 @@ on:
         required: false
         type: boolean
         default: true
+      white_mode:
+        description: "White brightness mode (silence=white, loud=blown-out)"
+        required: false
+        type: boolean
+        default: false
 
 env:
   R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
@@ -265,6 +270,9 @@ jobs:
           fi
           if [ "${{ inputs.legacy }}" = "true" ]; then
             ARGS+=(--legacy)
+          fi
+          if [ "${{ inputs.white_mode }}" = "true" ]; then
+            ARGS+=(--white-mode)
           fi
 
           # Auto-discover stills
