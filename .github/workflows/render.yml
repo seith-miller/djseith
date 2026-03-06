@@ -36,6 +36,11 @@ on:
         required: false
         type: boolean
         default: false
+      auto_mode:
+        description: "Auto-assign white/dark per track based on energy terciles"
+        required: false
+        type: boolean
+        default: false
 
 env:
   R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
@@ -257,6 +262,32 @@ jobs:
                   client.download_file(bucket, key, key)
           "
 
+      - name: Determine brightness mode
+        id: brightness
+        if: (inputs.mode == 'full' || inputs.mode == 'render') && inputs.auto_mode == true
+        env:
+          TRACK_BASENAME: ${{ matrix.track }}
+        run: |
+          python -c "
+          import boto3, json, os
+          from botocore.config import Config
+          client = boto3.client('s3',
+              endpoint_url=os.environ['R2_ENDPOINT'],
+              aws_access_key_id=os.environ['R2_ACCESS_KEY_ID'],
+              aws_secret_access_key=os.environ['R2_SECRET_ACCESS_KEY'],
+              config=Config(signature_version='s3v4'),
+              region_name='auto')
+          bucket = os.environ.get('R2_BUCKET', 'djseith')
+          client.download_file(bucket, 'audio/energy_modes.json', '/tmp/energy_modes.json')
+          modes = json.load(open('/tmp/energy_modes.json'))
+          basename = os.environ['TRACK_BASENAME'].rsplit('.', 1)[0]
+          entry = modes.get(basename, {})
+          mode = entry.get('mode', 'default')
+          print(f'{basename}: energy={entry.get(\"energy\", \"?\")} → {mode}')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f'mode={mode}\n')
+          "
+
       - name: Render video
         if: inputs.mode == 'full' || inputs.mode == 'render'
         run: |
@@ -276,10 +307,16 @@ jobs:
           if [ "${{ inputs.legacy }}" = "true" ]; then
             ARGS+=(--legacy)
           fi
-          if [ "${{ inputs.white_mode }}" = "true" ]; then
+
+          # Brightness mode: auto_mode overrides manual white/dark inputs
+          TRACK_MODE="${{ steps.brightness.outputs.mode }}"
+          if [ "${{ inputs.auto_mode }}" = "true" ] && [ "${TRACK_MODE}" = "white" ]; then
             ARGS+=(--white-mode)
-          fi
-          if [ "${{ inputs.dark_mode }}" = "true" ]; then
+          elif [ "${{ inputs.auto_mode }}" = "true" ] && [ "${TRACK_MODE}" = "dark" ]; then
+            ARGS+=(--dark-mode)
+          elif [ "${{ inputs.white_mode }}" = "true" ]; then
+            ARGS+=(--white-mode)
+          elif [ "${{ inputs.dark_mode }}" = "true" ]; then
             ARGS+=(--dark-mode)
           fi
 
