@@ -885,6 +885,10 @@ def main():
                     help="Disable audio-reactive brightness modulation")
     ap.add_argument("--white-mode",      action="store_true",
                     help="White brightness: silence=white, loud=blown-out")
+    ap.add_argument("--dark-mode",       action="store_true",
+                    help="Dark mode: only use dark + neutral assets")
+    ap.add_argument("--stills-tags",     default=None,
+                    help="Path to stills brightness tags JSON (for light/dark filtering)")
     ap.add_argument("--strobe-hz",       type=float, default=0.0,
                     help="Strobe frequency in Hz (0=off, e.g. 2.5)")
     ap.add_argument("--strobe-limit",    type=float, default=1.5,
@@ -936,6 +940,23 @@ def main():
         if not shots:
             raise SystemExit(f"No shots match tags {args.tags} — tag shots first with tag_shots.py")
         print(f"  Tag filter {args.tags}: {before} → {len(shots)} shots")
+
+    # Filter shots by brightness mode
+    if args.white_mode or args.dark_mode:
+        mode_tag = "light" if args.white_mode else "dark"
+        before = len(shots)
+        shots = [s for s in shots
+                 if s.get('brightness_tag', 'dark') in (mode_tag, 'neutral')]
+        print(f"  Brightness filter ({mode_tag}+neutral): {before} → {len(shots)} shots")
+
+    # Filter stills by brightness mode
+    if args.stills and args.stills_tags and (args.white_mode or args.dark_mode):
+        stills_tags = json.loads(Path(args.stills_tags).read_text())
+        mode_tag = "light" if args.white_mode else "dark"
+        before = len(args.stills)
+        args.stills = [p for p in args.stills
+                       if stills_tags.get(Path(p).name, 'neutral') in (mode_tag, 'neutral')]
+        print(f"  Stills filter ({mode_tag}+neutral): {before} → {len(args.stills)} stills")
 
     sections   = phrases['sections']
     beat_times = phrases['beat_times']

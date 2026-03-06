@@ -31,6 +31,11 @@ on:
         required: false
         type: boolean
         default: false
+      dark_mode:
+        description: "Dark mode (only dark + neutral assets)"
+        required: false
+        type: boolean
+        default: false
 
 env:
   R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
@@ -114,7 +119,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: projects/
-          key: project-assets-v1
+          key: project-assets-v2
 
       - name: Pull audio from R2
         run: |
@@ -274,11 +279,18 @@ jobs:
           if [ "${{ inputs.white_mode }}" = "true" ]; then
             ARGS+=(--white-mode)
           fi
+          if [ "${{ inputs.dark_mode }}" = "true" ]; then
+            ARGS+=(--dark-mode)
+          fi
 
           # Auto-discover stills
           STILLS=$(find projects/funeral_parade_of_roses/stills -name "*.png" 2>/dev/null | sort)
           if [ -n "$STILLS" ]; then
             ARGS+=(--stills ${STILLS})
+            TAGS_FILE="projects/funeral_parade_of_roses/data/stills_brightness_tags.json"
+            if [ -f "${TAGS_FILE}" ]; then
+              ARGS+=(--stills-tags "${TAGS_FILE}")
+            fi
           fi
 
           # Use per-track analysis if available
