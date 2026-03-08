@@ -127,6 +127,8 @@ jobs:
           key: project-assets-v2
 
       - name: Pull audio from R2
+        env:
+          TRACK_BASENAME: ${{ matrix.track }}
         run: |
           python -c "
           import boto3, os
@@ -139,7 +141,7 @@ jobs:
               region_name='auto')
           bucket = os.environ.get('R2_BUCKET', 'djseith')
 
-          track = '${{ matrix.track }}'
+          track = os.environ['TRACK_BASENAME']
           key = f'audio/source/{track}'
           os.makedirs('audio/source', exist_ok=True)
           print(f'Pulling {key}')
