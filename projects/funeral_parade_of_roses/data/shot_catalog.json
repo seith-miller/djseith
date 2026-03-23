@@ -11,7 +11,8 @@
       12,
       12
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_001.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_001.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_002.avi": {
     "duration": 43.168,
@@ -25,7 +26,8 @@
       200,
       200
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_002.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_002.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_003.avi": {
     "duration": 96.68,
@@ -39,7 +41,8 @@
       200,
       200
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_003.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_003.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_004.avi": {
     "duration": 6.548,
@@ -53,7 +56,8 @@
       227,
       227
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_004.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_004.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_005.avi": {
     "duration": 97.472,
@@ -67,7 +71,8 @@
       120,
       120
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_005.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_005.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_006.avi": {
     "duration": 25.234,
@@ -81,7 +86,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_006.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_006.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_007.avi": {
     "duration": 44.962,
@@ -95,7 +101,8 @@
       82,
       82
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_007.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_007.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_008.avi": {
     "duration": 5.172,
@@ -109,7 +116,8 @@
       14,
       14
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_008.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_008.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_009.avi": {
     "duration": 5.547,
@@ -123,7 +131,8 @@
       20,
       20
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_009.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_009.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_010.avi": {
     "duration": 9.927,
@@ -137,7 +146,8 @@
       123,
       123
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_010.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_010.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_011.avi": {
     "duration": 4.421,
@@ -151,7 +161,8 @@
       124,
       124
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_011.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_011.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_012.avi": {
     "duration": 16.183,
@@ -165,7 +176,8 @@
       91,
       91
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_012.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_012.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_013.avi": {
     "duration": 2.044,
@@ -179,7 +191,8 @@
       115,
       115
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_013.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_013.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_014.avi": {
     "duration": 2.044,
@@ -193,7 +206,8 @@
       110,
       110
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_014.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_014.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_015.avi": {
     "duration": 3.212,
@@ -207,7 +221,8 @@
       82,
       82
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_015.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_015.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_016.avi": {
     "duration": 62.062,
@@ -221,7 +236,8 @@
       85,
       85
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_016.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_016.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_017.avi": {
     "duration": 15.307,
@@ -235,7 +251,8 @@
       97,
       97
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_017.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_017.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_018.avi": {
     "duration": 36.453,
@@ -249,7 +266,8 @@
       22,
       22
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_018.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_018.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_019.avi": {
     "duration": 11.303,
@@ -263,7 +281,8 @@
       40,
       40
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_019.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_019.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_020.avi": {
     "duration": 19.937,
@@ -277,7 +296,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_020.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_020.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_021.avi": {
     "duration": 2.085,
@@ -291,7 +311,8 @@
       131,
       131
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_021.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_021.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_022.avi": {
     "duration": 3.17,
@@ -305,7 +326,8 @@
       34,
       34
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_022.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_022.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_023.avi": {
     "duration": 54.012,
@@ -319,7 +341,8 @@
       108,
       108
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_023.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_023.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_024.avi": {
     "duration": 48.966,
@@ -333,7 +356,8 @@
       116,
       116
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_024.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_024.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_025.avi": {
     "duration": 35.494,
@@ -347,7 +371,8 @@
       70,
       70
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_025.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_025.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_026.avi": {
     "duration": 33.659,
@@ -361,7 +386,8 @@
       42,
       42
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_026.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_026.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_027.avi": {
     "duration": 16.35,
@@ -375,7 +401,8 @@
       35,
       35
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_027.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_027.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_028.avi": {
     "duration": 17.309,
@@ -389,7 +416,8 @@
       38,
       38
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_028.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_028.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_029.avi": {
     "duration": 4.046,
@@ -403,7 +431,8 @@
       72,
       72
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_029.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_029.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_030.avi": {
     "duration": 35.869,
@@ -417,7 +446,8 @@
       66,
       66
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_030.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_030.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_031.avi": {
     "duration": 13.68,
@@ -431,7 +461,8 @@
       57,
       57
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_031.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_031.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_032.avi": {
     "duration": 17.726,
@@ -445,7 +476,8 @@
       73,
       73
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_032.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_032.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_033.avi": {
     "duration": 1.668,
@@ -459,7 +491,8 @@
       178,
       178
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_033.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_033.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_034.avi": {
     "duration": 19.686,
@@ -473,7 +506,8 @@
       51,
       51
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_034.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_034.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_035.avi": {
     "duration": 28.32,
@@ -487,7 +521,8 @@
       34,
       34
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_035.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_035.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_036.avi": {
     "duration": 4.713,
@@ -501,7 +536,8 @@
       87,
       87
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_036.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_036.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_037.avi": {
     "duration": 10.427,
@@ -515,7 +551,8 @@
       46,
       46
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_037.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_037.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_038.avi": {
     "duration": 1.043,
@@ -529,7 +566,8 @@
       89,
       89
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_038.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_038.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_039.avi": {
     "duration": 19.811,
@@ -543,7 +581,8 @@
       43,
       43
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_039.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_039.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_040.avi": {
     "duration": 10.344,
@@ -557,7 +596,8 @@
       33,
       33
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_040.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_040.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_041.avi": {
     "duration": 2.544,
@@ -571,7 +611,8 @@
       21,
       21
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_041.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_041.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_042.avi": {
     "duration": 22.689,
@@ -585,7 +626,8 @@
       41,
       41
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_042.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_042.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_043.avi": {
     "duration": 31.531,
@@ -599,7 +641,8 @@
       116,
       116
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_043.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_043.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_044.avi": {
     "duration": 13.347,
@@ -613,7 +656,8 @@
       30,
       30
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_044.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_044.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_045.avi": {
     "duration": 32.699,
@@ -627,7 +671,8 @@
       30,
       30
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_045.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_045.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_046.avi": {
     "duration": 6.423,
@@ -641,7 +686,8 @@
       32,
       32
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_046.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_046.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_047.avi": {
     "duration": 7.799,
@@ -655,7 +701,8 @@
       93,
       93
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_047.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_047.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_048.avi": {
     "duration": 25.359,
@@ -669,7 +716,8 @@
       33,
       33
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_048.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_048.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_049.avi": {
     "duration": 8.383,
@@ -683,7 +731,8 @@
       80,
       80
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_049.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_049.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_050.avi": {
     "duration": 55.973,
@@ -697,7 +746,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_050.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_050.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_051.avi": {
     "duration": 19.77,
@@ -711,7 +761,8 @@
       80,
       80
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_051.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_051.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_052.avi": {
     "duration": 1.001,
@@ -725,7 +776,8 @@
       17,
       17
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_052.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_052.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_053.avi": {
     "duration": 12.554,
@@ -739,7 +791,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_053.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_053.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_054.avi": {
     "duration": 4.63,
@@ -753,7 +806,8 @@
       121,
       121
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_054.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_054.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_055.avi": {
     "duration": 8.3,
@@ -767,7 +821,8 @@
       57,
       57
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_055.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_055.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_056.avi": {
     "duration": 15.557,
@@ -781,7 +836,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_056.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_056.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_057.avi": {
     "duration": 17.851,
@@ -795,7 +851,8 @@
       96,
       96
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_057.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_057.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_058.avi": {
     "duration": 60.811,
@@ -809,7 +866,8 @@
       73,
       73
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_058.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_058.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_059.avi": {
     "duration": 22.356,
@@ -823,7 +881,8 @@
       83,
       83
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_059.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_059.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_060.avi": {
     "duration": 10.969,
@@ -837,7 +896,8 @@
       136,
       136
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_060.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_060.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_061.avi": {
     "duration": 0.834,
@@ -851,7 +911,8 @@
       38,
       38
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_061.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_061.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_062.avi": {
     "duration": 15.432,
@@ -865,7 +926,8 @@
       104,
       104
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_062.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_062.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_063.avi": {
     "duration": 6.59,
@@ -879,7 +941,8 @@
       116,
       116
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_063.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_063.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_064.avi": {
     "duration": 0.626,
@@ -893,7 +956,8 @@
       107,
       107
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_064.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_064.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_065.avi": {
     "duration": 1.043,
@@ -907,7 +971,8 @@
       95,
       95
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_065.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_065.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_066.avi": {
     "duration": 1.21,
@@ -921,7 +986,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_066.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_066.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_067.avi": {
     "duration": 0.667,
@@ -935,7 +1001,8 @@
       126,
       126
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_067.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_067.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_068.avi": {
     "duration": 0.584,
@@ -949,7 +1016,8 @@
       149,
       149
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_068.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_068.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_069.avi": {
     "duration": 0.584,
@@ -963,7 +1031,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_069.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_069.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_070.avi": {
     "duration": 1.793,
@@ -977,7 +1046,8 @@
       210,
       210
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_070.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_070.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_071.avi": {
     "duration": 3.921,
@@ -991,7 +1061,8 @@
       93,
       93
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_071.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_071.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_072.avi": {
     "duration": 2.044,
@@ -1005,7 +1076,8 @@
       127,
       127
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_072.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_072.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_073.avi": {
     "duration": 17.726,
@@ -1019,7 +1091,8 @@
       114,
       114
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_073.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_073.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_074.avi": {
     "duration": 18.56,
@@ -1033,7 +1106,8 @@
       109,
       109
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_074.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_074.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_075.avi": {
     "duration": 17.935,
@@ -1047,7 +1121,8 @@
       119,
       119
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_075.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_075.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_076.avi": {
     "duration": 3.045,
@@ -1061,7 +1136,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_076.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_076.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_077.avi": {
     "duration": 12.346,
@@ -1075,7 +1151,8 @@
       39,
       39
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_077.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_077.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_078.avi": {
     "duration": 10.928,
@@ -1089,7 +1166,8 @@
       99,
       99
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_078.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_078.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_079.avi": {
     "duration": 5.589,
@@ -1103,7 +1181,8 @@
       21,
       21
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_079.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_079.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_080.avi": {
     "duration": 11.053,
@@ -1117,7 +1196,8 @@
       23,
       23
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_080.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_080.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_081.avi": {
     "duration": 3.086,
@@ -1131,7 +1211,8 @@
       20,
       20
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_081.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_081.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_082.avi": {
     "duration": 0.792,
@@ -1145,7 +1226,8 @@
       11,
       11
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_082.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_082.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_083.avi": {
     "duration": 2.002,
@@ -1159,7 +1241,8 @@
       92,
       92
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_083.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_083.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_084.avi": {
     "duration": 8.217,
@@ -1173,7 +1256,8 @@
       70,
       70
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_084.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_084.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_085.avi": {
     "duration": 10.344,
@@ -1187,7 +1271,8 @@
       62,
       62
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_085.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_085.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_086.avi": {
     "duration": 5.797,
@@ -1201,7 +1286,8 @@
       66,
       66
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_086.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_086.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_087.avi": {
     "duration": 25.776,
@@ -1215,7 +1301,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_087.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_087.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_088.avi": {
     "duration": 2.211,
@@ -1229,7 +1316,8 @@
       69,
       69
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_088.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_088.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_089.avi": {
     "duration": 10.052,
@@ -1243,7 +1331,8 @@
       83,
       83
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_089.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_089.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_090.avi": {
     "duration": 6.298,
@@ -1257,7 +1346,8 @@
       54,
       54
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_090.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_090.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_091.avi": {
     "duration": 20.687,
@@ -1271,7 +1361,8 @@
       40,
       40
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_091.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_091.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_092.avi": {
     "duration": 1.501,
@@ -1285,7 +1376,8 @@
       43,
       43
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_092.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_092.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_093.avi": {
     "duration": 1.21,
@@ -1299,7 +1391,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_093.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_093.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_094.avi": {
     "duration": 1.543,
@@ -1313,7 +1406,8 @@
       106,
       106
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_094.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_094.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_095.avi": {
     "duration": 1.793,
@@ -1327,7 +1421,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_095.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_095.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_096.avi": {
     "duration": 1.126,
@@ -1341,7 +1436,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_096.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_096.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_097.avi": {
     "duration": 1.96,
@@ -1355,7 +1451,8 @@
       85,
       85
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_097.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_097.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_098.avi": {
     "duration": 2.294,
@@ -1369,7 +1466,8 @@
       81,
       81
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_098.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_098.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_099.avi": {
     "duration": 5.672,
@@ -1383,7 +1481,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_099.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_099.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_100.avi": {
     "duration": 5.547,
@@ -1397,7 +1496,8 @@
       58,
       58
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_100.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_100.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_101.avi": {
     "duration": 10.552,
@@ -1411,7 +1511,8 @@
       51,
       51
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_101.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_101.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_102.avi": {
     "duration": 6.298,
@@ -1425,7 +1526,8 @@
       48,
       48
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_102.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_102.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_103.avi": {
     "duration": 0.959,
@@ -1439,7 +1541,8 @@
       158,
       158
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_103.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_103.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_104.avi": {
     "duration": 11.553,
@@ -1453,7 +1556,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_104.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_104.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_105.avi": {
     "duration": 31.198,
@@ -1467,7 +1571,8 @@
       64,
       64
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_105.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_105.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_106.avi": {
     "duration": 0.751,
@@ -1481,7 +1586,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_106.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_106.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_107.avi": {
     "duration": 3.587,
@@ -1495,7 +1601,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_107.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_107.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_108.avi": {
     "duration": 47.339,
@@ -1509,7 +1616,8 @@
       66,
       66
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_108.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_108.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_109.avi": {
     "duration": 4.671,
@@ -1523,7 +1631,8 @@
       173,
       173
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_109.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_109.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_110.avi": {
     "duration": 9.801,
@@ -1537,7 +1646,8 @@
       77,
       77
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_110.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_110.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_111.avi": {
     "duration": 15.682,
@@ -1551,7 +1661,8 @@
       74,
       74
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_111.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_111.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_112.avi": {
     "duration": 20.562,
@@ -1565,7 +1676,8 @@
       48,
       48
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_112.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_112.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_113.avi": {
     "duration": 12.429,
@@ -1579,7 +1691,8 @@
       55,
       55
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_113.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_113.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_114.avi": {
     "duration": 18.56,
@@ -1593,7 +1706,8 @@
       82,
       82
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_114.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_114.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_115.avi": {
     "duration": 17.434,
@@ -1607,7 +1721,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_115.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_115.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_116.avi": {
     "duration": 45.754,
@@ -1621,7 +1736,8 @@
       44,
       44
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_116.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_116.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_117.avi": {
     "duration": 62.604,
@@ -1635,7 +1751,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_117.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_117.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_118.avi": {
     "duration": 19.686,
@@ -1649,7 +1766,8 @@
       40,
       40
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_118.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_118.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_119.avi": {
     "duration": 78.996,
@@ -1663,7 +1781,8 @@
       56,
       56
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_119.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_119.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_120.avi": {
     "duration": 1.501,
@@ -1677,7 +1796,8 @@
       137,
       137
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_120.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_120.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_121.avi": {
     "duration": 24.233,
@@ -1691,7 +1811,8 @@
       38,
       38
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_121.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_121.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_122.avi": {
     "duration": 6.34,
@@ -1705,7 +1826,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_122.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_122.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_123.avi": {
     "duration": 3.462,
@@ -1719,7 +1841,8 @@
       44,
       44
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_123.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_123.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_124.avi": {
     "duration": 6.924,
@@ -1733,7 +1856,8 @@
       29,
       29
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_124.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_124.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_125.avi": {
     "duration": 41.583,
@@ -1747,7 +1871,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_125.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_125.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_126.avi": {
     "duration": 4.046,
@@ -1761,7 +1886,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_126.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_126.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_127.avi": {
     "duration": 13.805,
@@ -1775,7 +1901,8 @@
       37,
       37
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_127.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_127.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_128.avi": {
     "duration": 8.634,
@@ -1789,7 +1916,8 @@
       54,
       54
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_128.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_128.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_129.avi": {
     "duration": 10.677,
@@ -1803,7 +1931,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_129.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_129.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_130.avi": {
     "duration": 4.796,
@@ -1817,7 +1946,8 @@
       80,
       80
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_130.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_130.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_131.avi": {
     "duration": 4.296,
@@ -1831,7 +1961,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_131.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_131.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_132.avi": {
     "duration": 18.81,
@@ -1845,7 +1976,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_132.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_132.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_133.avi": {
     "duration": 3.837,
@@ -1859,7 +1991,8 @@
       148,
       148
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_133.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_133.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_134.avi": {
     "duration": 27.236,
@@ -1873,7 +2006,8 @@
       101,
       101
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_134.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_134.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_135.avi": {
     "duration": 25.025,
@@ -1887,7 +2021,8 @@
       103,
       103
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_135.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_135.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_136.avi": {
     "duration": 0.876,
@@ -1901,7 +2036,8 @@
       107,
       107
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_136.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_136.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_137.avi": {
     "duration": 0.959,
@@ -1915,7 +2051,8 @@
       103,
       103
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_137.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_137.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_138.avi": {
     "duration": 1.126,
@@ -1929,7 +2066,8 @@
       85,
       85
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_138.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_138.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_139.avi": {
     "duration": 2.544,
@@ -1943,7 +2081,8 @@
       105,
       105
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_139.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_139.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_140.avi": {
     "duration": 20.312,
@@ -1957,7 +2096,8 @@
       81,
       81
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_140.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_140.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_141.avi": {
     "duration": 12.012,
@@ -1971,7 +2111,8 @@
       96,
       96
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_141.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_141.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_142.avi": {
     "duration": 2.002,
@@ -1985,7 +2126,8 @@
       131,
       131
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_142.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_142.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_143.avi": {
     "duration": 78.078,
@@ -1999,7 +2141,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_143.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_143.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_144.avi": {
     "duration": 5.005,
@@ -2013,7 +2156,8 @@
       13,
       13
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_144.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_144.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_145.avi": {
     "duration": 4.421,
@@ -2027,7 +2171,8 @@
       56,
       56
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_145.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_145.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_146.avi": {
     "duration": 2.669,
@@ -2041,7 +2186,8 @@
       11,
       11
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_146.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_146.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_147.avi": {
     "duration": 5.672,
@@ -2055,7 +2201,8 @@
       80,
       80
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_147.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_147.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_148.avi": {
     "duration": 3.795,
@@ -2069,7 +2216,8 @@
       61,
       61
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_148.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_148.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_149.avi": {
     "duration": 6.798,
@@ -2083,7 +2231,8 @@
       91,
       91
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_149.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_149.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_150.avi": {
     "duration": 35.369,
@@ -2097,7 +2246,8 @@
       104,
       104
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_150.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_150.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_151.avi": {
     "duration": 7.925,
@@ -2111,7 +2261,8 @@
       94,
       94
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_151.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_151.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_152.avi": {
     "duration": 7.925,
@@ -2125,7 +2276,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_152.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_152.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_153.avi": {
     "duration": 1.001,
@@ -2139,7 +2291,8 @@
       116,
       116
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_153.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_153.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_154.avi": {
     "duration": 2.127,
@@ -2153,7 +2306,8 @@
       80,
       80
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_154.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_154.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_155.avi": {
     "duration": 1.043,
@@ -2167,7 +2321,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_155.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_155.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_156.avi": {
     "duration": 0.918,
@@ -2181,7 +2336,8 @@
       73,
       73
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_156.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_156.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_157.avi": {
     "duration": 5.297,
@@ -2195,7 +2351,8 @@
       63,
       63
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_157.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_157.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_158.avi": {
     "duration": 1.543,
@@ -2209,7 +2366,8 @@
       63,
       63
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_158.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_158.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_159.avi": {
     "duration": 3.045,
@@ -2223,7 +2381,8 @@
       94,
       94
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_159.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_159.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_160.avi": {
     "duration": 2.211,
@@ -2237,7 +2396,8 @@
       63,
       63
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_160.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_160.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_161.avi": {
     "duration": 1.877,
@@ -2251,7 +2411,8 @@
       58,
       58
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_161.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_161.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_162.avi": {
     "duration": 1.877,
@@ -2265,7 +2426,8 @@
       84,
       84
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_162.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_162.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_163.avi": {
     "duration": 2.294,
@@ -2279,7 +2441,8 @@
       78,
       78
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_163.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_163.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_164.avi": {
     "duration": 1.001,
@@ -2293,7 +2456,8 @@
       94,
       94
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_164.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_164.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_165.avi": {
     "duration": 1.126,
@@ -2307,7 +2471,8 @@
       54,
       54
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_165.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_165.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_166.avi": {
     "duration": 0.542,
@@ -2321,7 +2486,8 @@
       72,
       72
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_166.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_166.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_167.avi": {
     "duration": 5.214,
@@ -2335,7 +2501,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_167.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_167.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_168.avi": {
     "duration": 5.464,
@@ -2349,7 +2516,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_168.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_168.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_169.avi": {
     "duration": 8.008,
@@ -2363,7 +2531,8 @@
       72,
       72
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_169.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_169.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_170.avi": {
     "duration": 2.085,
@@ -2377,7 +2546,8 @@
       80,
       80
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_170.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_170.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_171.avi": {
     "duration": 0.584,
@@ -2391,7 +2561,8 @@
       106,
       106
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_171.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_171.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_172.avi": {
     "duration": 2.169,
@@ -2405,7 +2576,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_172.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_172.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_173.avi": {
     "duration": 2.419,
@@ -2419,7 +2591,8 @@
       82,
       82
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_173.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_173.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_174.avi": {
     "duration": 0.918,
@@ -2433,7 +2606,8 @@
       111,
       111
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_174.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_174.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_175.avi": {
     "duration": 5.38,
@@ -2447,7 +2621,8 @@
       74,
       74
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_175.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_175.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_176.avi": {
     "duration": 1.168,
@@ -2461,7 +2636,8 @@
       59,
       59
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_176.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_176.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_177.avi": {
     "duration": 3.045,
@@ -2475,7 +2651,8 @@
       84,
       84
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_177.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_177.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_178.avi": {
     "duration": 2.294,
@@ -2489,7 +2666,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_178.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_178.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_179.avi": {
     "duration": 1.919,
@@ -2503,7 +2681,8 @@
       77,
       77
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_179.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_179.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_180.avi": {
     "duration": 1.501,
@@ -2517,7 +2696,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_180.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_180.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_181.avi": {
     "duration": 5.172,
@@ -2531,7 +2711,8 @@
       72,
       72
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_181.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_181.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_182.avi": {
     "duration": 2.544,
@@ -2545,7 +2726,8 @@
       78,
       78
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_182.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_182.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_183.avi": {
     "duration": 1.543,
@@ -2559,7 +2741,8 @@
       68,
       68
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_183.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_183.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_184.avi": {
     "duration": 8.3,
@@ -2573,7 +2756,8 @@
       164,
       164
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_184.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_184.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_185.avi": {
     "duration": 6.298,
@@ -2587,7 +2771,8 @@
       20,
       20
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_185.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_185.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_186.avi": {
     "duration": 29.154,
@@ -2601,7 +2786,8 @@
       46,
       46
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_186.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_186.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_187.avi": {
     "duration": 29.196,
@@ -2615,7 +2801,8 @@
       59,
       59
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_187.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_187.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_188.avi": {
     "duration": 12.304,
@@ -2629,7 +2816,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_188.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_188.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_189.avi": {
     "duration": 1.919,
@@ -2643,7 +2831,8 @@
       48,
       48
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_189.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_189.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_190.avi": {
     "duration": 3.921,
@@ -2657,7 +2846,8 @@
       53,
       53
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_190.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_190.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_191.avi": {
     "duration": 2.419,
@@ -2671,7 +2861,8 @@
       34,
       34
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_191.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_191.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_192.avi": {
     "duration": 1.418,
@@ -2685,7 +2876,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_192.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_192.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_193.avi": {
     "duration": 2.711,
@@ -2699,7 +2891,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_193.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_193.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_194.avi": {
     "duration": 42.334,
@@ -2713,7 +2906,8 @@
       59,
       59
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_194.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_194.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_195.avi": {
     "duration": 32.115,
@@ -2727,7 +2921,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_195.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_195.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_196.avi": {
     "duration": 49.007,
@@ -2741,7 +2936,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_196.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_196.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_197.avi": {
     "duration": 16.725,
@@ -2755,7 +2951,8 @@
       38,
       38
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_197.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_197.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_198.avi": {
     "duration": 118.452,
@@ -2769,7 +2966,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_198.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_198.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_199.avi": {
     "duration": 4.671,
@@ -2783,7 +2981,8 @@
       64,
       64
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_199.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_199.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_200.avi": {
     "duration": 6.215,
@@ -2797,7 +2996,8 @@
       53,
       53
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_200.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_200.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_201.avi": {
     "duration": 10.802,
@@ -2811,7 +3011,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_201.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_201.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_202.avi": {
     "duration": 1.543,
@@ -2825,7 +3026,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_202.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_202.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_203.avi": {
     "duration": 26.818,
@@ -2839,7 +3041,8 @@
       35,
       35
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_203.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_203.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_204.avi": {
     "duration": 2.085,
@@ -2853,7 +3056,8 @@
       55,
       55
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_204.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_204.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_205.avi": {
     "duration": 14.431,
@@ -2867,7 +3071,8 @@
       28,
       28
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_205.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_205.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_206.avi": {
     "duration": 19.061,
@@ -2881,7 +3086,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_206.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_206.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_207.avi": {
     "duration": 28.57,
@@ -2895,7 +3101,8 @@
       41,
       41
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_207.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_207.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_208.avi": {
     "duration": 12.304,
@@ -2909,7 +3116,8 @@
       25,
       25
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_208.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_208.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_209.avi": {
     "duration": 30.322,
@@ -2923,7 +3131,8 @@
       33,
       33
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_209.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_209.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_210.avi": {
     "duration": 27.361,
@@ -2937,7 +3146,8 @@
       45,
       45
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_210.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_210.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_211.avi": {
     "duration": 30.697,
@@ -2951,7 +3161,8 @@
       40,
       40
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_211.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_211.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_212.avi": {
     "duration": 1.21,
@@ -2965,7 +3176,8 @@
       67,
       67
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_212.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_212.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_213.avi": {
     "duration": 25.192,
@@ -2979,7 +3191,8 @@
       58,
       58
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_213.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_213.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_214.avi": {
     "duration": 0.959,
@@ -2993,7 +3206,8 @@
       162,
       162
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_214.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_214.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_215.avi": {
     "duration": 56.473,
@@ -3007,7 +3221,8 @@
       39,
       39
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_215.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_215.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_216.avi": {
     "duration": 22.564,
@@ -3021,7 +3236,8 @@
       41,
       41
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_216.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_216.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_217.avi": {
     "duration": 5.422,
@@ -3035,7 +3251,8 @@
       163,
       163
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_217.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_217.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_218.avi": {
     "duration": 29.029,
@@ -3049,7 +3266,8 @@
       87,
       87
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_218.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_218.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_219.avi": {
     "duration": 9.176,
@@ -3063,7 +3281,8 @@
       111,
       111
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_219.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_219.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_220.avi": {
     "duration": 15.557,
@@ -3077,7 +3296,8 @@
       95,
       95
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_220.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_220.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_221.avi": {
     "duration": 18.06,
@@ -3091,7 +3311,8 @@
       109,
       109
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_221.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_221.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_222.avi": {
     "duration": 7.049,
@@ -3105,7 +3326,8 @@
       70,
       70
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_222.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_222.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_223.avi": {
     "duration": 9.176,
@@ -3119,7 +3341,8 @@
       102,
       102
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_223.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_223.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_224.avi": {
     "duration": 12.971,
@@ -3133,7 +3356,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_224.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_224.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_225.avi": {
     "duration": 6.84,
@@ -3147,7 +3371,8 @@
       91,
       91
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_225.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_225.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_226.avi": {
     "duration": 18.185,
@@ -3161,7 +3386,8 @@
       118,
       118
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_226.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_226.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_227.avi": {
     "duration": 7.591,
@@ -3175,7 +3401,8 @@
       26,
       26
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_227.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_227.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_228.avi": {
     "duration": 2.169,
@@ -3189,7 +3416,8 @@
       15,
       15
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_228.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_228.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_229.avi": {
     "duration": 7.716,
@@ -3203,7 +3431,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_229.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_229.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_230.avi": {
     "duration": 2.419,
@@ -3217,7 +3446,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_230.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_230.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_231.avi": {
     "duration": 1.043,
@@ -3231,7 +3461,8 @@
       96,
       96
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_231.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_231.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_232.avi": {
     "duration": 8.675,
@@ -3245,7 +3476,8 @@
       23,
       23
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_232.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_232.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_233.avi": {
     "duration": 0.918,
@@ -3259,7 +3491,8 @@
       23,
       23
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_233.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_233.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_234.avi": {
     "duration": 6.715,
@@ -3273,7 +3506,8 @@
       17,
       17
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_234.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_234.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_235.avi": {
     "duration": 0.792,
@@ -3287,7 +3521,8 @@
       21,
       21
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_235.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_235.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_236.avi": {
     "duration": 1.21,
@@ -3301,7 +3536,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_236.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_236.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_237.avi": {
     "duration": 2.419,
@@ -3315,7 +3551,8 @@
       21,
       21
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_237.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_237.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_238.avi": {
     "duration": 3.545,
@@ -3329,7 +3566,8 @@
       42,
       42
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_238.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_238.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_239.avi": {
     "duration": 1.96,
@@ -3343,7 +3581,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_239.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_239.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_240.avi": {
     "duration": 1.084,
@@ -3357,7 +3596,8 @@
       91,
       91
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_240.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_240.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_241.avi": {
     "duration": 2.461,
@@ -3371,7 +3611,8 @@
       31,
       31
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_241.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_241.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_242.avi": {
     "duration": 2.92,
@@ -3385,7 +3626,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_242.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_242.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_243.avi": {
     "duration": 2.294,
@@ -3399,7 +3641,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_243.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_243.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_244.avi": {
     "duration": 4.087,
@@ -3413,7 +3656,8 @@
       22,
       22
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_244.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_244.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_245.avi": {
     "duration": 1.043,
@@ -3427,7 +3671,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_245.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_245.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_246.avi": {
     "duration": 1.418,
@@ -3441,7 +3686,8 @@
       17,
       17
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_246.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_246.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_247.avi": {
     "duration": 4.171,
@@ -3455,7 +3701,8 @@
       43,
       43
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_247.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_247.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_248.avi": {
     "duration": 2.669,
@@ -3469,7 +3716,8 @@
       46,
       46
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_248.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_248.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_249.avi": {
     "duration": 0.542,
@@ -3483,7 +3731,8 @@
       77,
       77
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_249.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_249.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_250.avi": {
     "duration": 6.048,
@@ -3497,7 +3746,8 @@
       25,
       25
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_250.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_250.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_251.avi": {
     "duration": 1.293,
@@ -3511,7 +3761,8 @@
       48,
       48
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_251.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_251.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_252.avi": {
     "duration": 29.947,
@@ -3525,7 +3776,8 @@
       41,
       41
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_252.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_252.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_253.avi": {
     "duration": 16.85,
@@ -3539,7 +3791,8 @@
       43,
       43
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_253.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_253.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_254.avi": {
     "duration": 9.593,
@@ -3553,7 +3806,8 @@
       43,
       43
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_254.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_254.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_255.avi": {
     "duration": 4.421,
@@ -3567,7 +3821,8 @@
       33,
       33
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_255.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_255.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_256.avi": {
     "duration": 7.799,
@@ -3581,7 +3836,8 @@
       46,
       46
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_256.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_256.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_257.avi": {
     "duration": 1.919,
@@ -3595,7 +3851,8 @@
       35,
       35
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_257.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_257.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_258.avi": {
     "duration": 17.684,
@@ -3609,7 +3866,8 @@
       42,
       42
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_258.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_258.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_259.avi": {
     "duration": 6.673,
@@ -3623,7 +3881,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_259.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_259.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_260.avi": {
     "duration": 0.918,
@@ -3637,7 +3896,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_260.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_260.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_261.avi": {
     "duration": 51.593,
@@ -3651,7 +3911,8 @@
       57,
       57
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_261.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_261.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_262.avi": {
     "duration": 77.661,
@@ -3665,7 +3926,8 @@
       57,
       57
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_262.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_262.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_263.avi": {
     "duration": 39.581,
@@ -3679,7 +3941,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_263.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_263.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_264.avi": {
     "duration": 14.806,
@@ -3693,7 +3956,8 @@
       125,
       125
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_264.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_264.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_265.avi": {
     "duration": 10.052,
@@ -3707,7 +3971,8 @@
       77,
       77
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_265.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_265.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_266.avi": {
     "duration": 4.421,
@@ -3721,7 +3986,8 @@
       62,
       62
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_266.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_266.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_267.avi": {
     "duration": 16.058,
@@ -3735,7 +4001,8 @@
       73,
       73
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_267.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_267.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_268.avi": {
     "duration": 20.103,
@@ -3749,7 +4016,8 @@
       83,
       83
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_268.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_268.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_269.avi": {
     "duration": 38.83,
@@ -3763,7 +4031,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_269.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_269.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_270.avi": {
     "duration": 6.298,
@@ -3777,7 +4046,8 @@
       44,
       44
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_270.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_270.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_271.avi": {
     "duration": 31.949,
@@ -3791,7 +4061,8 @@
       68,
       68
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_271.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_271.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_272.avi": {
     "duration": 1.919,
@@ -3805,7 +4076,8 @@
       44,
       44
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_272.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_272.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_273.avi": {
     "duration": 14.431,
@@ -3819,7 +4091,8 @@
       56,
       56
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_273.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_273.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_274.avi": {
     "duration": 5.339,
@@ -3833,7 +4106,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_274.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_274.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_275.avi": {
     "duration": 6.924,
@@ -3847,7 +4121,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_275.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_275.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_276.avi": {
     "duration": 43.001,
@@ -3861,7 +4136,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_276.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_276.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_277.avi": {
     "duration": 4.046,
@@ -3875,7 +4151,8 @@
       10,
       10
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_277.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_277.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_278.avi": {
     "duration": 91.3,
@@ -3889,7 +4166,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_278.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_278.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_279.avi": {
     "duration": 5.672,
@@ -3903,7 +4181,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_279.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_279.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_280.avi": {
     "duration": 16.308,
@@ -3917,7 +4196,8 @@
       37,
       37
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_280.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_280.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_281.avi": {
     "duration": 18.936,
@@ -3931,7 +4211,8 @@
       88,
       88
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_281.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_281.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_282.avi": {
     "duration": 18.06,
@@ -3945,7 +4226,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_282.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_282.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_283.avi": {
     "duration": 9.718,
@@ -3959,7 +4241,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_283.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_283.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_284.avi": {
     "duration": 10.969,
@@ -3973,7 +4256,8 @@
       38,
       38
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_284.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_284.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_285.avi": {
     "duration": 3.67,
@@ -3987,7 +4271,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_285.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_285.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_286.avi": {
     "duration": 16.308,
@@ -4001,7 +4286,8 @@
       58,
       58
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_286.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_286.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_287.avi": {
     "duration": 3.17,
@@ -4015,7 +4301,8 @@
       66,
       66
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_287.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_287.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_288.avi": {
     "duration": 10.177,
@@ -4029,7 +4316,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_288.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_288.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_289.avi": {
     "duration": 3.795,
@@ -4043,7 +4331,8 @@
       82,
       82
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_289.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_289.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_290.avi": {
     "duration": 15.807,
@@ -4057,7 +4346,8 @@
       58,
       58
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_290.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_290.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_291.avi": {
     "duration": 13.305,
@@ -4071,7 +4361,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_291.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_291.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_292.avi": {
     "duration": 0.667,
@@ -4085,7 +4376,8 @@
       84,
       84
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_292.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_292.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_293.avi": {
     "duration": 0.667,
@@ -4099,7 +4391,8 @@
       105,
       105
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_293.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_293.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_294.avi": {
     "duration": 8.175,
@@ -4113,7 +4406,8 @@
       67,
       67
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_294.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_294.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_295.avi": {
     "duration": 1.293,
@@ -4127,7 +4421,8 @@
       70,
       70
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_295.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_295.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_296.avi": {
     "duration": 1.668,
@@ -4141,7 +4436,8 @@
       64,
       64
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_296.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_296.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_297.avi": {
     "duration": 10.677,
@@ -4155,7 +4451,8 @@
       62,
       62
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_297.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_297.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_298.avi": {
     "duration": 2.419,
@@ -4169,7 +4466,8 @@
       78,
       78
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_298.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_298.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_299.avi": {
     "duration": 2.169,
@@ -4183,7 +4481,8 @@
       84,
       84
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_299.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_299.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_300.avi": {
     "duration": 1.793,
@@ -4197,7 +4496,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_300.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_300.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_301.avi": {
     "duration": 1.71,
@@ -4211,7 +4511,8 @@
       95,
       95
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_301.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_301.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_302.avi": {
     "duration": 21.188,
@@ -4225,7 +4526,8 @@
       93,
       93
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_302.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_302.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_303.avi": {
     "duration": 25.442,
@@ -4239,7 +4541,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_303.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_303.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_304.avi": {
     "duration": 7.799,
@@ -4253,7 +4556,8 @@
       83,
       83
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_304.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_304.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_305.avi": {
     "duration": 11.678,
@@ -4267,7 +4571,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_305.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_305.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_306.avi": {
     "duration": 2.336,
@@ -4281,7 +4586,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_306.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_306.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_307.avi": {
     "duration": 24.358,
@@ -4295,7 +4601,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_307.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_307.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_308.avi": {
     "duration": 8.842,
@@ -4309,7 +4616,8 @@
       32,
       32
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_308.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_308.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_309.avi": {
     "duration": 3.545,
@@ -4323,7 +4631,8 @@
       16,
       16
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_309.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_309.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_310.avi": {
     "duration": 5.589,
@@ -4337,7 +4646,8 @@
       106,
       106
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_310.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_310.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_311.avi": {
     "duration": 10.969,
@@ -4351,7 +4661,8 @@
       130,
       130
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_311.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_311.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_312.avi": {
     "duration": 5.047,
@@ -4365,7 +4676,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_312.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_312.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_313.avi": {
     "duration": 24.316,
@@ -4379,7 +4691,8 @@
       27,
       27
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_313.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_313.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_314.avi": {
     "duration": 3.086,
@@ -4393,7 +4706,8 @@
       90,
       90
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_314.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_314.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_315.avi": {
     "duration": 4.671,
@@ -4407,7 +4721,8 @@
       17,
       17
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_315.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_315.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_316.avi": {
     "duration": 21.438,
@@ -4421,7 +4736,8 @@
       28,
       28
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_316.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_316.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_317.avi": {
     "duration": 12.054,
@@ -4435,7 +4751,8 @@
       53,
       53
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_317.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_317.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_318.avi": {
     "duration": 0.709,
@@ -4449,7 +4766,8 @@
       46,
       46
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_318.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_318.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_319.avi": {
     "duration": 23.315,
@@ -4463,7 +4781,8 @@
       45,
       45
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_319.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_319.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_320.avi": {
     "duration": 6.34,
@@ -4477,7 +4796,8 @@
       25,
       25
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_320.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_320.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_321.avi": {
     "duration": 4.421,
@@ -4491,7 +4811,8 @@
       70,
       70
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_321.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_321.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_322.avi": {
     "duration": 7.341,
@@ -4505,7 +4826,8 @@
       37,
       37
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_322.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_322.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_323.avi": {
     "duration": 8.05,
@@ -4519,7 +4841,8 @@
       79,
       79
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_323.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_323.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_324.avi": {
     "duration": 0.918,
@@ -4533,7 +4856,8 @@
       37,
       37
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_324.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_324.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_325.avi": {
     "duration": 1.919,
@@ -4547,7 +4871,8 @@
       31,
       31
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_325.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_325.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_326.avi": {
     "duration": 8.842,
@@ -4561,7 +4886,8 @@
       65,
       65
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_326.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_326.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_327.avi": {
     "duration": 38.58,
@@ -4575,7 +4901,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_327.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_327.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_328.avi": {
     "duration": 66.984,
@@ -4589,7 +4916,8 @@
       34,
       34
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_328.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_328.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_329.avi": {
     "duration": 4.046,
@@ -4603,7 +4931,8 @@
       154,
       154
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_329.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_329.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_330.avi": {
     "duration": 51.718,
@@ -4617,7 +4946,8 @@
       58,
       58
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_330.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_330.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_331.avi": {
     "duration": 63.772,
@@ -4631,7 +4961,8 @@
       65,
       65
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_331.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_331.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_332.avi": {
     "duration": 7.925,
@@ -4645,7 +4976,8 @@
       107,
       107
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_332.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_332.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_333.avi": {
     "duration": 25.609,
@@ -4659,7 +4991,8 @@
       72,
       72
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_333.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_333.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_334.avi": {
     "duration": 32.616,
@@ -4673,7 +5006,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_334.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_334.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_335.avi": {
     "duration": 4.046,
@@ -4687,7 +5021,8 @@
       38,
       38
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_335.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_335.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_336.avi": {
     "duration": 15.057,
@@ -4701,7 +5036,8 @@
       57,
       57
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_336.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_336.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_337.avi": {
     "duration": 35.118,
@@ -4715,7 +5051,8 @@
       30,
       30
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_337.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_337.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_338.avi": {
     "duration": 18.727,
@@ -4729,7 +5066,8 @@
       62,
       62
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_338.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_338.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_339.avi": {
     "duration": 4.671,
@@ -4743,7 +5081,8 @@
       48,
       48
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_339.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_339.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_340.avi": {
     "duration": 1.543,
@@ -4757,7 +5096,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_340.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_340.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_341.avi": {
     "duration": 2.169,
@@ -4771,7 +5111,8 @@
       44,
       44
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_341.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_341.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_342.avi": {
     "duration": 2.336,
@@ -4785,7 +5126,8 @@
       73,
       73
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_342.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_342.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_343.avi": {
     "duration": 3.42,
@@ -4799,7 +5141,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_343.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_343.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_344.avi": {
     "duration": 0.918,
@@ -4813,7 +5156,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_344.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_344.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_345.avi": {
     "duration": 33.325,
@@ -4827,7 +5171,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_345.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_345.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_346.avi": {
     "duration": 24.691,
@@ -4841,7 +5186,8 @@
       55,
       55
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_346.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_346.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_347.avi": {
     "duration": 51.76,
@@ -4855,7 +5201,8 @@
       73,
       73
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_347.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_347.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_348.avi": {
     "duration": 21.313,
@@ -4869,7 +5216,8 @@
       86,
       86
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_348.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_348.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_349.avi": {
     "duration": 2.794,
@@ -4883,7 +5231,8 @@
       53,
       53
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_349.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_349.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_350.avi": {
     "duration": 2.169,
@@ -4897,7 +5246,8 @@
       99,
       99
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_350.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_350.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_351.avi": {
     "duration": 2.419,
@@ -4911,7 +5261,8 @@
       85,
       85
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_351.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_351.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_352.avi": {
     "duration": 4.463,
@@ -4925,7 +5276,8 @@
       109,
       109
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_352.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_352.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_353.avi": {
     "duration": 3.045,
@@ -4939,7 +5291,8 @@
       65,
       65
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_353.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_353.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_354.avi": {
     "duration": 1.668,
@@ -4953,7 +5306,8 @@
       96,
       96
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_354.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_354.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_355.avi": {
     "duration": 2.794,
@@ -4967,7 +5321,8 @@
       66,
       66
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_355.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_355.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_356.avi": {
     "duration": 3.67,
@@ -4981,7 +5336,8 @@
       92,
       92
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_356.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_356.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_357.avi": {
     "duration": 9.218,
@@ -4995,7 +5351,8 @@
       106,
       106
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_357.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_357.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_358.avi": {
     "duration": 1.585,
@@ -5009,7 +5366,8 @@
       72,
       72
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_358.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_358.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_359.avi": {
     "duration": 1.418,
@@ -5023,7 +5381,8 @@
       101,
       101
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_359.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_359.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_360.avi": {
     "duration": 2.92,
@@ -5037,7 +5396,8 @@
       67,
       67
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_360.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_360.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_361.avi": {
     "duration": 43.085,
@@ -5051,7 +5411,8 @@
       122,
       122
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_361.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_361.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_362.avi": {
     "duration": 37.871,
@@ -5065,7 +5426,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_362.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_362.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_363.avi": {
     "duration": 16.558,
@@ -5079,7 +5441,8 @@
       54,
       54
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_363.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_363.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_364.avi": {
     "duration": 4.296,
@@ -5093,7 +5456,8 @@
       70,
       70
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_364.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_364.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_365.avi": {
     "duration": 6.423,
@@ -5107,7 +5471,8 @@
       62,
       62
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_365.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_365.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_366.avi": {
     "duration": 3.67,
@@ -5121,7 +5486,8 @@
       64,
       64
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_366.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_366.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_367.avi": {
     "duration": 7.674,
@@ -5135,7 +5501,8 @@
       75,
       75
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_367.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_367.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_368.avi": {
     "duration": 9.927,
@@ -5149,7 +5516,8 @@
       62,
       62
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_368.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_368.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_369.avi": {
     "duration": 34.451,
@@ -5163,7 +5531,8 @@
       61,
       61
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_369.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_369.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_370.avi": {
     "duration": 8.8,
@@ -5177,7 +5546,8 @@
       45,
       45
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_370.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_370.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_371.avi": {
     "duration": 3.795,
@@ -5191,7 +5561,8 @@
       74,
       74
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_371.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_371.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_372.avi": {
     "duration": 12.721,
@@ -5205,7 +5576,8 @@
       40,
       40
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_372.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_372.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_373.avi": {
     "duration": 31.448,
@@ -5219,7 +5591,8 @@
       76,
       76
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_373.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_373.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_374.avi": {
     "duration": 2.92,
@@ -5233,7 +5606,8 @@
       11,
       11
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_374.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_374.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_375.avi": {
     "duration": 26.068,
@@ -5247,7 +5621,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_375.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_375.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_376.avi": {
     "duration": 0.959,
@@ -5261,7 +5636,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_376.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_376.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_377.avi": {
     "duration": 0.792,
@@ -5275,7 +5651,8 @@
       68,
       68
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_377.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_377.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_378.avi": {
     "duration": 0.834,
@@ -5289,7 +5666,8 @@
       149,
       149
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_378.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_378.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_379.avi": {
     "duration": 17.809,
@@ -5303,7 +5681,8 @@
       53,
       53
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_379.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_379.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_380.avi": {
     "duration": 10.969,
@@ -5317,7 +5696,8 @@
       108,
       108
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_380.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_380.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_381.avi": {
     "duration": 18.727,
@@ -5331,7 +5711,8 @@
       49,
       49
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_381.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_381.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_382.avi": {
     "duration": 11.595,
@@ -5345,7 +5726,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_382.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_382.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_383.avi": {
     "duration": 34.076,
@@ -5359,7 +5741,8 @@
       63,
       63
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_383.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_383.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_384.avi": {
     "duration": 11.97,
@@ -5373,7 +5756,8 @@
       70,
       70
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_384.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_384.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_385.avi": {
     "duration": 5.422,
@@ -5387,7 +5771,8 @@
       35,
       35
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_385.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_385.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_386.avi": {
     "duration": 19.561,
@@ -5401,7 +5786,8 @@
       86,
       86
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_386.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_386.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_387.avi": {
     "duration": 9.801,
@@ -5415,7 +5801,8 @@
       113,
       113
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_387.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_387.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_388.avi": {
     "duration": 4.838,
@@ -5429,7 +5816,8 @@
       113,
       113
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_388.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_388.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_389.avi": {
     "duration": 8.55,
@@ -5443,7 +5831,8 @@
       109,
       109
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_389.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_389.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_390.avi": {
     "duration": 2.92,
@@ -5457,7 +5846,8 @@
       100,
       100
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_390.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_390.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_391.avi": {
     "duration": 21.48,
@@ -5471,7 +5861,8 @@
       78,
       78
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_391.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_391.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_392.avi": {
     "duration": 15.474,
@@ -5485,7 +5876,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_392.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_392.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_393.avi": {
     "duration": 13.18,
@@ -5499,7 +5891,8 @@
       74,
       74
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_393.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_393.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_394.avi": {
     "duration": 14.723,
@@ -5513,7 +5906,8 @@
       97,
       97
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_394.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_394.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_395.avi": {
     "duration": 6.84,
@@ -5527,7 +5921,8 @@
       59,
       59
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_395.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_395.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_396.avi": {
     "duration": 6.965,
@@ -5541,7 +5936,8 @@
       75,
       75
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_396.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_396.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_397.avi": {
     "duration": 7.925,
@@ -5555,7 +5951,8 @@
       75,
       75
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_397.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_397.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_398.avi": {
     "duration": 11.97,
@@ -5569,7 +5966,8 @@
       91,
       91
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_398.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_398.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_399.avi": {
     "duration": 40.249,
@@ -5583,7 +5981,8 @@
       115,
       115
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_399.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_399.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_400.avi": {
     "duration": 42.334,
@@ -5597,7 +5996,8 @@
       95,
       95
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_400.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_400.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_401.avi": {
     "duration": 14.598,
@@ -5611,7 +6011,8 @@
       41,
       41
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_401.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_401.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_402.avi": {
     "duration": 4.087,
@@ -5625,7 +6026,8 @@
       85,
       85
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_402.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_402.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_403.avi": {
     "duration": 10.093,
@@ -5639,7 +6041,8 @@
       60,
       60
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_403.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_403.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_404.avi": {
     "duration": 19.853,
@@ -5653,7 +6056,8 @@
       56,
       56
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_404.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_404.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_405.avi": {
     "duration": 18.185,
@@ -5667,7 +6071,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_405.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_405.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_406.avi": {
     "duration": 18.977,
@@ -5681,7 +6086,8 @@
       67,
       67
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_406.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_406.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_407.avi": {
     "duration": 36.995,
@@ -5695,7 +6101,8 @@
       80,
       80
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_407.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_407.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_408.avi": {
     "duration": 37.829,
@@ -5709,7 +6116,8 @@
       63,
       63
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_408.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_408.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_409.avi": {
     "duration": 0.667,
@@ -5723,7 +6131,8 @@
       74,
       74
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_409.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_409.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_410.avi": {
     "duration": 31.99,
@@ -5737,7 +6146,8 @@
       24,
       24
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_410.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_410.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_411.avi": {
     "duration": 0.667,
@@ -5751,7 +6161,8 @@
       11,
       11
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_411.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_411.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_412.avi": {
     "duration": 7.049,
@@ -5765,7 +6176,8 @@
       32,
       32
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_412.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_412.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_413.avi": {
     "duration": 0.792,
@@ -5779,7 +6191,8 @@
       33,
       33
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_413.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_413.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_414.avi": {
     "duration": 2.586,
@@ -5793,7 +6206,8 @@
       37,
       37
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_414.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_414.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_415.avi": {
     "duration": 1.793,
@@ -5807,7 +6221,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_415.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_415.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_416.avi": {
     "duration": 2.336,
@@ -5821,7 +6236,8 @@
       15,
       15
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_416.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_416.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_417.avi": {
     "duration": 1.96,
@@ -5835,7 +6251,8 @@
       40,
       40
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_417.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_417.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_418.avi": {
     "duration": 2.294,
@@ -5849,7 +6266,8 @@
       37,
       37
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_418.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_418.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_419.avi": {
     "duration": 1.043,
@@ -5863,7 +6281,8 @@
       146,
       146
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_419.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_419.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_420.avi": {
     "duration": 2.92,
@@ -5877,7 +6296,8 @@
       59,
       59
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_420.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_420.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_421.avi": {
     "duration": 1.543,
@@ -5891,7 +6311,8 @@
       54,
       54
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_421.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_421.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_422.avi": {
     "duration": 1.585,
@@ -5905,7 +6326,8 @@
       46,
       46
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_422.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_422.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_423.avi": {
     "duration": 0.918,
@@ -5919,7 +6341,8 @@
       52,
       52
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_423.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_423.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_424.avi": {
     "duration": 1.084,
@@ -5933,7 +6356,8 @@
       56,
       56
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_424.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_424.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_425.avi": {
     "duration": 0.542,
@@ -5947,7 +6371,8 @@
       22,
       22
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_425.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_425.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_426.avi": {
     "duration": 1.418,
@@ -5961,7 +6386,8 @@
       47,
       47
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_426.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_426.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_427.avi": {
     "duration": 3.212,
@@ -5975,7 +6401,8 @@
       36,
       36
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_427.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_427.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_428.avi": {
     "duration": 62.02,
@@ -5989,7 +6416,8 @@
       20,
       20
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_428.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_428.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_429.avi": {
     "duration": 51.843,
@@ -6003,7 +6431,8 @@
       114,
       114
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_429.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_429.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_430.avi": {
     "duration": 16.808,
@@ -6017,7 +6446,8 @@
       102,
       102
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_430.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_430.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_431.avi": {
     "duration": 5.339,
@@ -6031,7 +6461,8 @@
       86,
       86
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_431.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_431.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_432.avi": {
     "duration": 9.426,
@@ -6045,7 +6476,8 @@
       84,
       84
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_432.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_432.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_433.avi": {
     "duration": 4.922,
@@ -6059,7 +6491,8 @@
       100,
       100
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_433.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_433.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_434.avi": {
     "duration": 35.452,
@@ -6073,7 +6506,8 @@
       92,
       92
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_434.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_434.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_435.avi": {
     "duration": 7.299,
@@ -6087,7 +6521,8 @@
       106,
       106
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_435.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_435.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_436.avi": {
     "duration": 9.801,
@@ -6101,7 +6536,8 @@
       85,
       85
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_436.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_436.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_437.avi": {
     "duration": 5.464,
@@ -6115,7 +6551,8 @@
       38,
       38
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_437.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_437.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_438.avi": {
     "duration": 2.044,
@@ -6129,7 +6566,8 @@
       56,
       56
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_438.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_438.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_439.avi": {
     "duration": 22.856,
@@ -6143,7 +6581,8 @@
       53,
       53
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_439.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_439.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_440.avi": {
     "duration": 6.548,
@@ -6157,7 +6596,8 @@
       93,
       93
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_440.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_440.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_441.avi": {
     "duration": 30.948,
@@ -6171,7 +6611,8 @@
       116,
       116
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_441.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_441.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_442.avi": {
     "duration": 2.669,
@@ -6185,7 +6626,8 @@
       106,
       106
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_442.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_442.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_443.avi": {
     "duration": 30.864,
@@ -6199,7 +6641,8 @@
       109,
       109
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_443.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_443.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_444.avi": {
     "duration": 7.049,
@@ -6213,7 +6656,8 @@
       54,
       54
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_444.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_444.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_445.avi": {
     "duration": 1.043,
@@ -6227,7 +6671,8 @@
       89,
       89
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_445.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_445.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_446.avi": {
     "duration": 3.921,
@@ -6241,7 +6686,8 @@
       61,
       61
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_446.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_446.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_447.avi": {
     "duration": 9.176,
@@ -6255,7 +6701,8 @@
       87,
       87
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_447.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_447.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_448.avi": {
     "duration": 7.674,
@@ -6269,7 +6716,8 @@
       117,
       117
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_448.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_448.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_449.avi": {
     "duration": 11.178,
@@ -6283,7 +6731,8 @@
       41,
       41
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_449.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_449.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_450.avi": {
     "duration": 0.918,
@@ -6297,7 +6746,8 @@
       61,
       61
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_450.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_450.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_451.avi": {
     "duration": 12.471,
@@ -6311,7 +6761,8 @@
       74,
       74
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_451.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_451.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_452.avi": {
     "duration": 0.959,
@@ -6325,7 +6776,8 @@
       35,
       35
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_452.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_452.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_453.avi": {
     "duration": 10.177,
@@ -6339,7 +6791,8 @@
       71,
       71
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_453.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_453.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_454.avi": {
     "duration": 2.044,
@@ -6353,7 +6806,8 @@
       73,
       73
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_454.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_454.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_455.avi": {
     "duration": 13.18,
@@ -6367,7 +6821,8 @@
       50,
       50
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_455.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_455.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_456.avi": {
     "duration": 14.556,
@@ -6381,7 +6836,8 @@
       105,
       105
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_456.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_456.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_457.avi": {
     "duration": 55.347,
@@ -6395,7 +6851,8 @@
       72,
       72
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_457.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_457.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_458.avi": {
     "duration": 51.343,
@@ -6409,7 +6866,8 @@
       41,
       41
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_458.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_458.avi",
+    "brightness_tag": "dark"
   },
   "funeral_parade_of_roses_459.avi": {
     "duration": 85.752,
@@ -6423,7 +6881,8 @@
       119,
       119
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_459.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_459.avi",
+    "brightness_tag": "light"
   },
   "funeral_parade_of_roses_460.avi": {
     "duration": 0.918,
@@ -6437,6 +6896,7 @@
       0,
       0
     ],
-    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_460.avi"
+    "path": "projects/funeral_parade_of_roses/shots/funeral_parade_of_roses_460.avi",
+    "brightness_tag": "dark"
   }
 }
