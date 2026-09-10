@@ -12,8 +12,14 @@ from pathlib import Path
 import imagehash
 from PIL import Image
 
-SHOTS_DIR = Path(__file__).parent.parent / "assets" / "video" / "shots"
-REPORT_DIR = Path(__file__).parent.parent / "assets" / "video" / "duplicate_report"
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from paths import add_project_arg, report_dir, shots_dir  # noqa: E402
+
+# Defaults from the env; --project overrides in main(). (This used to point at
+# a long-gone assets/video/ tree, so the script had been silently finding
+# nothing.)
+SHOTS_DIR = shots_dir()
+REPORT_DIR = report_dir()
 HASH_CACHE = REPORT_DIR / "hashes.json"
 
 
@@ -208,7 +214,9 @@ def delete_duplicates(clusters: list[list[str]], dry_run: bool = True):
 
 
 def main():
+    global SHOTS_DIR, REPORT_DIR, HASH_CACHE
     ap = argparse.ArgumentParser(description="Find and remove duplicate shots")
+    add_project_arg(ap)
     ap.add_argument("-t", "--threshold", type=int, default=18,
                     help="Hamming distance threshold (lower = stricter, default 18)")
     ap.add_argument("--delete", action="store_true",
@@ -216,6 +224,9 @@ def main():
     ap.add_argument("--dry-run", action="store_true",
                     help="Show what would be deleted without deleting")
     args = ap.parse_args()
+    SHOTS_DIR = shots_dir(args.project)
+    REPORT_DIR = report_dir(args.project)
+    HASH_CACHE = REPORT_DIR / "hashes.json"
 
     shots = sorted(SHOTS_DIR.rglob("shot_*.mp4"))
     print(f"Found {len(shots)} shots\n")

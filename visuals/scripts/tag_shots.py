@@ -7,13 +7,20 @@ Toggle tags with number keys 1-9. Press Space/Enter to advance.
 Tags are stored in review_state.json under "tags": {"shot.mp4": ["eddie", "night"], ...}
 """
 
+import argparse
 import json
+import sys
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import parse_qs, unquote
 
-SHOTS_DIR  = Path(__file__).parent.parent.parent / "projects" / "funeral_parade_of_roses" / "shots"
-STATE_FILE = Path(__file__).parent.parent.parent / "projects" / "funeral_parade_of_roses" / "data" / "review_state.json"
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from paths import add_project_arg, review_state_path, shots_dir  # noqa: E402
+
+# Defaults come from the env (DJSEITH_LIBRARY / DJSEITH_PROJECT);
+# --project overrides them in main().
+SHOTS_DIR  = shots_dir()
+STATE_FILE = review_state_path()
 PORT = 8112
 
 TAG_VOCAB = [
@@ -332,6 +339,15 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 def main():
+    global SHOTS_DIR, STATE_FILE, PORT
+    ap = argparse.ArgumentParser(description="Web UI to tag shots with descriptive labels")
+    add_project_arg(ap)
+    ap.add_argument("--port", type=int, default=PORT)
+    args = ap.parse_args()
+    SHOTS_DIR = shots_dir(args.project)
+    STATE_FILE = review_state_path(args.project)
+    PORT = args.port
+
     state = load_state()
     shots = get_taggable_shots(state)
     tagged = sum(1 for s in shots if state["tags"].get(s))

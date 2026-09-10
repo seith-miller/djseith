@@ -10,7 +10,7 @@ Per-shot metrics:
   - saturation      mean saturation [0-1]
   - dominant_color  [R, G, B] of most common color cluster
 
-Outputs a JSON catalog at projects/funeral_parade_of_roses/data/shot_catalog.json.
+Outputs a JSON catalog at <project>/data/shot_catalog.json (see visuals/paths.py).
 Results are cached — re-run is fast if shots haven't changed.
 """
 
@@ -20,8 +20,8 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-SHOTS_DIR   = Path(__file__).parent.parent.parent / "projects/funeral_parade_of_roses/shots"
-CATALOG_OUT = Path(__file__).parent.parent.parent / "projects/funeral_parade_of_roses/data/shot_catalog.json"
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from paths import add_project_arg, catalog_path, library_root, shots_dir  # noqa: E402
 
 # how many evenly-spaced frames to sample per shot
 N_SAMPLE_FRAMES = 16
@@ -112,13 +112,14 @@ def analyze_shot(path: Path) -> dict:
 
 def main():
     ap = argparse.ArgumentParser(description="Analyze visual characteristics of all shots")
-    ap.add_argument("--shots-dir", default=str(SHOTS_DIR))
-    ap.add_argument("-o", "--output",  default=str(CATALOG_OUT))
+    add_project_arg(ap)
+    ap.add_argument("--shots-dir", default=None, help="Override the project's shots/ folder")
+    ap.add_argument("-o", "--output", default=None, help="Override the project's data/shot_catalog.json")
     ap.add_argument("--force", action="store_true", help="Re-analyze even if cached")
     args = ap.parse_args()
 
-    shots_dir  = Path(args.shots_dir)
-    output     = Path(args.output)
+    shots_root = Path(args.shots_dir) if args.shots_dir else shots_dir(args.project)
+    output     = Path(args.output) if args.output else catalog_path(args.project)
 
     # load existing catalog for cache
     catalog = {}
@@ -129,13 +130,13 @@ def main():
     # collect all shot paths
     shot_paths = sorted(
         p for ext in ("*.mp4", "*.avi", "*.mov")
-        for p in shots_dir.rglob(ext)
+        for p in shots_root.rglob(ext)
     )
-    print(f"Found {len(shot_paths)} shots in {shots_dir}")
+    print(f"Found {len(shot_paths)} shots in {shots_root}")
 
     new_count = 0
     for i, path in enumerate(shot_paths):
-        key = str(path.relative_to(shots_dir))
+        key = str(path.relative_to(shots_root))
         if key in catalog and not args.force:
             continue
 
@@ -144,7 +145,14 @@ def main():
             print(f"  [{i+1}/{len(shot_paths)}] SKIP (unreadable): {key}")
             continue
 
-        result["path"] = str(path.relative_to(shots_dir.parent.parent.parent))
+        # Catalog paths are relative to the library root's parent. For the
+        # default layout that is the repo, so existing catalogs are unchanged
+        # ("projects/<p>/shots/..."). Falls back to the old rule for an
+        # explicit --shots-dir that lives outside the library.
+        try:
+            result["path"] = path.relative_to(library_root().parent).as_posix()
+        except ValueError:
+            result["path"] = path.relative_to(shots_root.parent.parent.parent).as_posix()
         catalog[key]   = result
         new_count += 1
 
