@@ -8,9 +8,14 @@ Same workflow as the audio downloader — queue file + direct URL support.
 
 import argparse
 import subprocess
+import sys
 from pathlib import Path
 
-ASSETS_DIR = Path(__file__).parent.parent.parent / "projects" / "funeral_parade_of_roses" / "source" / "video"
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from paths import add_project_arg, source_video_dir  # noqa: E402
+
+# Default project's source/video, from the env; --project / --output override.
+ASSETS_DIR = source_video_dir()
 QUEUE_FILE = Path(__file__).parent.parent / "video_queue.md"
 
 
@@ -23,7 +28,8 @@ def get_video_title(url: str, use_cookies: bool = False) -> str:
     return result.stdout.strip() if result.returncode == 0 else ""
 
 
-def download_video(url: str, output_dir: Path = ASSETS_DIR, use_cookies: bool = False) -> Path | None:
+def download_video(url: str, output_dir: Path | None = None, use_cookies: bool = False) -> Path | None:
+    output_dir = output_dir or source_video_dir()
     output_dir.mkdir(parents=True, exist_ok=True)
 
     cmd = [
@@ -136,7 +142,7 @@ def write_queue_file(ready, not_ready, downloaded):
     QUEUE_FILE.write_text('\n'.join(lines))
 
 
-def download_from_queue(use_cookies: bool = False):
+def download_from_queue(use_cookies: bool = False, output_dir: Path | None = None):
     ready, not_ready, downloaded = parse_queue_file()
 
     if not_ready:
@@ -154,7 +160,7 @@ def download_from_queue(use_cookies: bool = False):
     for orig_title, url in ready[:]:
         title = orig_title or get_video_title(url, use_cookies)
         print(f"Downloading: {title or url}")
-        result = download_video(url, use_cookies=use_cookies)
+        result = download_video(url, output_dir=output_dir, use_cookies=use_cookies)
         if result:
             print(f"  Saved: {result.name}")
             ready.remove((orig_title, url))
@@ -173,18 +179,20 @@ def main():
                         help="Download all from video_queue.md")
     parser.add_argument("--cookies", "-c", action="store_true",
                         help="Use Chrome cookies (for age-restricted videos)")
-    parser.add_argument("--output", "-o", type=Path, default=ASSETS_DIR,
-                        help="Output directory (default: project source/video)")
+    parser.add_argument("--output", "-o", type=Path, default=None,
+                        help="Output directory (default: <project>/source/video)")
+    add_project_arg(parser)
     args = parser.parse_args()
+    output_dir = args.output or source_video_dir(args.project)
 
     if args.queue or not args.urls:
-        download_from_queue(use_cookies=args.cookies)
+        download_from_queue(use_cookies=args.cookies, output_dir=output_dir)
         return
 
     for url in args.urls:
         print(f"Downloading: {url}")
         title = get_video_title(url, args.cookies)
-        result = download_video(url, output_dir=args.output, use_cookies=args.cookies)
+        result = download_video(url, output_dir=output_dir, use_cookies=args.cookies)
         if result:
             print(f"  Saved: {result.name}")
             if QUEUE_FILE.exists():

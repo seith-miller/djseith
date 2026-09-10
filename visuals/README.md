@@ -7,6 +7,27 @@ Programmatic video and image generation tools for DJ SEITH live visuals and even
 - **Text contrast** — WCAG AA minimum (4.5:1) measured at actual render positions
 - **Text occlusion** — No text obscured by frames, images, or overlays
 
+## Library location
+
+Scripts resolve where the shot library lives through `visuals/paths.py` —
+nothing is hard-coded to one project any more.
+
+| Env var | Meaning | Default |
+|---|---|---|
+| `DJSEITH_LIBRARY` | directory holding `<project>/{source,shots,data,output,stills}` | `projects/` in this repo |
+| `DJSEITH_PROJECT` | the project scripts default to | `funeral_parade_of_roses` |
+
+Every script also takes `--project <name>` to override the default for one run.
+
+```bash
+# work on gay_industrial for this shell
+export DJSEITH_PROJECT=gay_industrial
+python visuals/scripts/analyze_shots.py
+
+# or keep the library outside the repo entirely (media stays out of git)
+export DJSEITH_LIBRARY=~/gather/jax-splatter/library
+```
+
 ## Video Tools
 
 ### download_video.py
