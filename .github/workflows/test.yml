@@ -16,7 +16,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install numpy pytest
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements-ci.txt pytest
 
       - name: Run tests
         run: python -m pytest tests/ -v
